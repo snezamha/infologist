@@ -1,0 +1,58 @@
+{
+  "title": "Benutzerverwaltung",
+  "description": "Verwalten Sie Benutzer und ihre Rollen",
+  "totalUsers": "{count, plural, one {# Benutzer} other {# Benutzer}}",
+  "columns": {
+    "user": "Benutzer",
+    "email": "E-Mail",
+    "role": "Rolle",
+    "status": "Status",
+    "actions": "Aktionen"
+  },
+  "roles": {
+    "super_admin": "Super-Admin",
+    "admin": "Admin",
+    "editor": "Redakteur",
+    "author": "Autor",
+    "contributor": "Mitarbeiter",
+    "user": "Benutzer"
+  },
+  "actions": {
+    "edit": "Bearbeiten",
+    "changeRole": "Rolle ändern",
+    "delete": "Löschen",
+    "none": "Keine Aktionen verfügbar",
+    "deleteConfirm": "Diesen Benutzer löschen?",
+    "deleteConfirmDescription": "Diese Aktion kann nicht rückgängig gemacht werden.",
+    "cancel": "Abbrechen",
+    "confirm": "Löschen"
+  },
+  "editTitle": "Bearbeiten {name}",
+  "editDescription": "Aktualisieren Sie das ausgewählte Benutzerkonto.",
+  "editFields": "Benutzerdetails",
+  "editFieldsDescription": "Profilinformationen und Zugriffsebene verwalten.",
+  "name": "Name",
+  "email": "E-Mail",
+  "role": "Rolle",
+  "save": "Änderungen speichern",
+  "previewTitle": "Kontovorschau",
+  "previewDescription": "So wird der Benutzer im Dashboard angezeigt.",
+  "statusLabel": "E-Mail-Status",
+  "googleLabel": "Kontotyp",
+  "googleManaged": "Von Google verwaltet",
+  "manualManaged": "Manuell",
+  "googleManagedField": "Dieser Wert wird von Google verwaltet und kann hier nicht geändert werden.",
+  "saved": "Benutzer gespeichert",
+  "error": "Etwas ist schiefgelaufen",
+  "status": {
+    "verified": "Verifiziert",
+    "unverified": "Nicht verifiziert"
+  },
+  "empty": "Keine Benutzer gefunden",
+  "filters": {
+    "searchPlaceholder": "Nach Name oder E-Mail suchen…",
+    "reset": "Zurücksetzen"
+  },
+  "deleteSuccess": "Benutzer gelöscht",
+  "roleSuccess": "Rolle aktualisiert"
+}

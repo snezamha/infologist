@@ -1,0 +1,299 @@
+{
+  "title": "Einstellungen",
+  "description": "Verwalten Sie Ihre Website-Konfiguration",
+  "saved": "Einstellungen gespeichert",
+  "error": "Speichern fehlgeschlagen",
+  "save": "Änderungen speichern",
+  "cancel": "Abbrechen",
+  "active": "Aktiv",
+  "inactive": "Inaktiv",
+  "protectedBadge": "Geschützt",
+  "tabs": {
+    "seo": "SEO & Metadaten",
+    "general": "Allgemein",
+    "appearance": "Erscheinungsbild",
+    "features": "Funktionen",
+    "domain": "Eigene Domain"
+  },
+  "seo": {
+    "title": "SEO & Metadaten",
+    "description": "Konfigurieren Sie die SEO-Einstellungen Ihrer Website für jede Sprache.",
+    "siteTitle": "Seitentitel",
+    "siteTitlePlaceholder": "Meine Website",
+    "metaDescription": "Meta-Beschreibung",
+    "metaDescriptionPlaceholder": "Eine kurze Beschreibung Ihrer Website",
+    "separator": "Trennzeichen",
+    "separatorPlaceholder": " | ",
+    "preview": "Vorschau",
+    "locales": {
+      "en": "Englisch",
+      "fa": "Persisch",
+      "de": "Deutsch"
+    }
+  },
+  "general": {
+    "title": "Allgemeine Einstellungen",
+    "description": "Konfigurieren Sie Sprache, Zeitzone und Datums-/Zeitformate.",
+    "siteLanguage": "Website-Sprache",
+    "siteLanguageDescription": "Wählen Sie die Standardsprache für Ihre Website.",
+    "timezone": "Zeitzone",
+    "timezoneDescription": "Wählen Sie eine Stadt in Ihrer Zeitzone oder einen UTC-Offset.",
+    "dateFormat": "Datumsformat",
+    "dateFormatDescription": "Wählen Sie, wie Daten auf Ihrer Website angezeigt werden.",
+    "timeFormat": "Zeitformat",
+    "timeFormatDescription": "Wählen Sie zwischen 12-Stunden- und 24-Stunden-Format.",
+    "dateFormats": {
+      "YYYY-MM-DD": "YYYY-MM-DD (2025-01-15)",
+      "DD/MM/YYYY": "DD/MM/YYYY (15/01/2025)",
+      "MM/DD/YYYY": "MM/DD/YYYY (01/15/2025)",
+      "D MMMM YYYY": "D MMMM YYYY (15. Januar 2025)",
+      "MMMM D, YYYY": "MMMM D, YYYY (Januar 15, 2025)"
+    },
+    "timeFormats": {
+      "HH:mm": "24-Stunden (14:30)",
+      "hh:mm A": "12-Stunden (02:30 PM)"
+    }
+  },
+  "appearance": {
+    "title": "Erscheinungseinstellungen",
+    "description": "Passen Sie das visuelle Erscheinungsbild Ihres Dashboards an.",
+    "colorScheme": "Farbschema",
+    "colorSchemeDescription": "Wählen Sie die Primärfarbe für Ihre Oberfläche.",
+    "customColor": "Benutzerdefinierte Farbe",
+    "customColorHex": "Hex-Code",
+    "borderRadius": "Eckenradius",
+    "borderRadiusDescription": "Passen Sie die Rundung von UI-Elementen an.",
+    "loading": {
+      "enabled": "Ladeanzeige für Navigation",
+      "description": "Zeigt ein sanftes Overlay, während interne Links und Seitenwechsel geladen werden.",
+      "spinner": "Lade-Spinner",
+      "spinnerDescription": "Wählen Sie einen animierten Spinner aus der svg-spinners-Sammlung.",
+      "chooseSpinner": "Spinner wählen",
+      "spinnerModalTitle": "Lade-Spinner wählen",
+      "spinnerModalDescription": "Wählen Sie die Option für die Ladeanzeige bei Navigation.",
+      "selectSpinner": "Spinner {spinner} wählen",
+      "colorMode": "Farbquelle",
+      "colorModeDescription": "Verwenden Sie Ihr aktives Farbschema oder wählen Sie eine eigene Ladefarbe.",
+      "color": "Eigene Farbe",
+      "size": "Größe",
+      "position": "Position",
+      "preview": "Vorschau",
+      "colorModes": {
+        "theme": "Farbschema",
+        "custom": "Eigene Farbe"
+      },
+      "groups": {
+        "rings": "Ringe",
+        "dots": "Punkte",
+        "bars": "Balken",
+        "blocks": "Blöcke",
+        "pulses": "Pulse",
+        "other": "Sonstige"
+      },
+      "positions": {
+        "top-start": "Oben Anfang",
+        "top-center": "Oben Mitte",
+        "top-end": "Oben Ende",
+        "center": "Mitte",
+        "bottom-start": "Unten Anfang",
+        "bottom-center": "Unten Mitte",
+        "bottom-end": "Unten Ende"
+      }
+    },
+    "preview": "Vorschau",
+    "previewButton": "Schaltfläche",
+    "colors": {
+      "neutral": "Neutral",
+      "blue": "Blau",
+      "green": "Grün",
+      "rose": "Rosé",
+      "orange": "Orange",
+      "violet": "Violett",
+      "teal": "Blaugrün",
+      "custom": "Benutzerdefiniert"
+    },
+    "radius": {
+      "none": "Keine",
+      "sm": "Klein",
+      "md": "Mittel",
+      "lg": "Groß",
+      "xl": "Sehr groß"
+    }
+  },
+  "features": {
+    "title": "Funktionsverwaltung",
+    "description": "Aktivieren Sie Module und Plugins, die dieses Projekt im Kern und im Frontend nutzen kann.",
+    "empty": "Für dieses Projekt sind keine aktiven Funktionen verfügbar.",
+    "emptyFilter": "Keine Funktionen entsprechen den aktuellen Filtern.",
+    "save": "Funktionen speichern",
+    "disableConfirmTitle": "Funktion deaktivieren?",
+    "disableConfirmDescription": "Das Deaktivieren von {feature} stoppt diese Funktion fuer das Projekt. Vorhandene Funktionsdaten bleiben erhalten und koennen spaeter reaktiviert werden.",
+    "disable": "Deaktivieren",
+    "searchPlaceholder": "Funktionen suchen...",
+    "settingsToggle": "Einstellungen",
+    "noSearchResults": "Keine Funktionen passend zu \"{query}\"",
+    "itemCount": "{count} Funktionen",
+    "filters": {
+      "all": "Alle",
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "columns": {
+      "feature": "Funktion",
+      "description": "Beschreibung",
+      "status": "Status"
+    },
+    "summary": {
+      "total": "Verfügbare Funktionen",
+      "active": "Aktive Funktionen"
+    },
+    "system": {
+      "title": "Systemfunktionen",
+      "description": "Eingebaute Funktionen werden pro Projekt nur aktiviert oder deaktiviert."
+    },
+    "modules": {
+      "title": "Module",
+      "description": "Bereitgestellte Module koennen pro Projekt aktiviert werden.",
+      "empty": "Fuer dieses Projekt sind keine Module verfuegbar.",
+      "import": "Importieren",
+      "export": "Exportieren",
+      "open": "Öffnen",
+      "install": "Installieren",
+      "reactivate": "Reaktivieren",
+      "reinstallTooltip": "Dieses Modul erneut installieren und seine Dateien aktualisieren",
+      "reinstall": "Neu installieren",
+      "uninstallTooltip": "Dieses Modul für das Projekt deaktivieren",
+      "uninstall": "Deaktivieren",
+      "delete": "Löschen",
+      "add": "Modul hinzufügen",
+      "deleteConfirmTitle": "Modul \\\"{name}\\\" löschen?",
+      "deleteConfirmDescription": "Dadurch wird das Modul dauerhaft von der Festplatte entfernt und seine Daten aus installierten Projekten gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+      "searchPlaceholder": "Module suchen...",
+      "noSearchResults": "Keine Module passend zu \"{query}\"",
+      "imported": "Modul importiert",
+      "exported": "Modul exportiert",
+      "importFailed": "Modulimport fehlgeschlagen",
+      "exportFailed": "Modulexport fehlgeschlagen",
+      "installed": "Modul installiert",
+      "uninstalled": "Modul deaktiviert; die Daten wurden beibehalten",
+      "installFailed": "Modulinstallation fehlgeschlagen",
+      "uninstallFailed": "Modul konnte nicht deaktiviert werden",
+      "deleted": "Modul aus allen Projekten entfernt",
+      "deleteFailed": "Modullöschung fehlgeschlagen",
+      "uninstallConfirmTitle": "{name} deaktivieren?",
+      "uninstallConfirmDescription": "Das Deaktivieren dieses Moduls deaktiviert es für dieses Projekt. Seine Daten bleiben erhalten und können später wiederhergestellt werden.",
+      "deactivate": "Deaktivieren",
+      "importConflictTitle": "Modul existiert bereits",
+      "importConflictDescription": "Das Modul {name} existiert bereits (aktuelle Version: {existingVersion}). Möchten Sie es mit Version {newVersion} überschreiben?",
+      "importOverwrite": "Überschreiben",
+      "importErrors": {
+        "invalidZip": "Die hochgeladene Datei ist keine gültige Modul-ZIP-Datei.",
+        "empty": "Das Modularchiv ist leer.",
+        "tooManyFiles": "Das Modularchiv enthält zu viele Dateien.",
+        "invalidPath": "Das Modularchiv enthält einen ungültigen Dateipfad.",
+        "tooLarge": "Das Modularchiv ist zu groß.",
+        "missingManifest": "Im Modularchiv fehlt module.json.",
+        "invalidManifest": "Das Modulmanifest ist ungültig.",
+        "moduleNotAvailable": "Modul ist nicht verfügbar.",
+        "moduleServerConfigUnavailable": "Die Modulquelle ist vorhanden, aber die Serverkonfiguration ist noch nicht bereit. Bitte versuchen Sie es gleich erneut.",
+        "projectDatabaseNotConfigured": "Die Projektdatenbank ist nicht konfiguriert."
+      },
+      "status": {
+        "installed": "Installiert",
+        "inactive": "Inaktiv",
+        "available": "Verfügbar",
+        "outdated": "Update verfügbar"
+      },
+      "filters": {
+        "all": "Alle",
+        "active": "Aktiv",
+        "inactive": "Inaktiv",
+        "available": "Verfügbar"
+      },
+      "itemCount": "{count} Module",
+      "columns": {
+        "module": "Modul",
+        "description": "Beschreibung",
+        "status": "Status"
+      },
+      "emptyFilter": "Keine Module entsprechen den aktuellen Filtern.",
+      "version": "Version {version}",
+      "missingDependencies": "Benötigt: {deps}",
+      "private": "Privat",
+      "update": "Aktualisieren",
+      "updateTooltip": "Installieren Sie die neueste Version dieses Moduls",
+      "cascadeWarning": "Die folgenden aktiven Module haengen ebenfalls von diesem ab und könnten funktionieren:",
+      "installDepsTitle": "Erforderliche Module installieren",
+      "installDepsDescription": "{module} benoetigt die folgenden Module:",
+      "installDepsInstallable": "Wird installiert:",
+      "installDepsUnavailable": "Nicht gefunden – separat installieren:",
+      "installWithDeps": "Alles installieren"
+    },
+    "scopes": {
+      "core": "Kern",
+      "frontend": "Frontend"
+    },
+    "deliveryModes": {
+      "module": "Modul",
+      "plugin": "Plugin"
+    },
+    "items": {
+      "mediaManagement": {
+        "title": "Medienverwaltung",
+        "description": "Ergaenzt die Medienfunktion des Projekts zum Speichern, Organisieren und Wiederverwenden hochgeladener Assets.",
+        "toggle": "Medienverwaltung umschalten"
+      },
+      "statistics": {
+        "title": "Statistiken",
+        "description": "Aktiviert Besucherverfolgung und Analysen fuer die oeffentliche Seite des Projekts.",
+        "toggle": "Statistiken umschalten"
+      },
+      "aiAssistant": {
+        "title": "KI-Assistent",
+        "description": "Konfiguriert die Assistentenmodelle, Anbieter und Prompt-Workflows fuer das Projekt.",
+        "toggle": "KI-Assistent umschalten"
+      },
+      "pageBuilder": {
+        "title": "Page Builder",
+        "description": "Visueller Page Builder zum Erstellen und Bearbeiten von Content-Layouts ohne Code.",
+        "toggle": "Page Builder umschalten"
+      }
+    },
+    "settings": {
+      "mediaManagement": {
+        "maxFileSizeMB": {
+          "label": "Max. Dateigroesse",
+          "description": "Groesste zulaessige Dateigroesse pro Medien-Upload.",
+          "unit": "MB"
+        },
+        "maxHourlyUploadMB": {
+          "label": "Max. Upload pro Stunde",
+          "description": "Maximales Medien-Upload-Volumen pro Benutzer und Stunde.",
+          "unit": "MB"
+        },
+        "maxTotalStorageGB": {
+          "label": "Max. Gesamtspeicher",
+          "description": "Maximale Gesamtspeicherkapazität für die Medienbibliothek dieses Projekts.",
+          "unit": "GB"
+        },
+        "maxStoragePerUserMB": {
+          "label": "Max. Speicher pro Benutzer",
+          "description": "Maximale Medienspeicherkapazitaet pro Benutzer.",
+          "unit": "MB"
+        }
+      },
+      "statistics": {
+        "sessionTimeoutSeconds": {
+          "label": "Sitzungs-Timeout",
+          "description": "Zeit nach der eine inaktive Besuchersitzung als abgelaufen gilt.",
+          "unit": "Minuten"
+        },
+        "liveThresholdSeconds": {
+          "label": "Live-Schwellwert",
+          "description": "Zeitintervall zur Kennzeichnung einer Besuchersitzung als aktuell aktiv.",
+          "unit": "Minuten"
+        }
+      }
+    }
+  }
+}

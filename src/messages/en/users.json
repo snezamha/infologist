@@ -1,0 +1,58 @@
+{
+  "title": "User Management",
+  "description": "Manage users and their roles",
+  "totalUsers": "{count, plural, one {# user} other {# users}}",
+  "columns": {
+    "user": "User",
+    "email": "Email",
+    "role": "Role",
+    "status": "Status",
+    "actions": "Actions"
+  },
+  "roles": {
+    "super_admin": "Super Admin",
+    "admin": "Admin",
+    "editor": "Editor",
+    "author": "Author",
+    "contributor": "Contributor",
+    "user": "User"
+  },
+  "actions": {
+    "edit": "Edit",
+    "changeRole": "Change Role",
+    "delete": "Delete",
+    "none": "No actions available",
+    "deleteConfirm": "Delete this user?",
+    "deleteConfirmDescription": "This action cannot be undone.",
+    "cancel": "Cancel",
+    "confirm": "Delete"
+  },
+  "editTitle": "Edit {name}",
+  "editDescription": "Update the selected user account.",
+  "editFields": "User details",
+  "editFieldsDescription": "Manage profile information and access level.",
+  "name": "Name",
+  "email": "Email",
+  "role": "Role",
+  "save": "Save changes",
+  "previewTitle": "Account preview",
+  "previewDescription": "This is how the user appears across the dashboard.",
+  "statusLabel": "Email status",
+  "googleLabel": "Account source",
+  "googleManaged": "Google managed",
+  "manualManaged": "Manual",
+  "googleManagedField": "This value is managed by Google and can't be changed here.",
+  "saved": "User saved",
+  "error": "Something went wrong",
+  "status": {
+    "verified": "Verified",
+    "unverified": "Unverified"
+  },
+  "empty": "No users found",
+  "filters": {
+    "searchPlaceholder": "Search by name or email…",
+    "reset": "Reset"
+  },
+  "deleteSuccess": "User deleted",
+  "roleSuccess": "Role updated"
+}

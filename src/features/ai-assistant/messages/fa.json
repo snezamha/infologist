@@ -1,0 +1,277 @@
+{
+  "name": "دستیار هوش مصنوعی",
+  "description": "پیکربندی ارائه‌دهنده‌ها و مدل‌های هوش مصنوعی برای دستیار.",
+  "menus": {
+    "management": "مدیریت",
+    "prompt-templates": "قالب‌های پرامپت"
+  },
+  "management": {
+    "title": "تنظیمات دستیار هوش مصنوعی",
+    "description": "ارائه‌دهنده‌ها و مدل‌های استفاده‌شده توسط دستیار را تنظیم کنید.",
+    "other": "سایر…",
+    "recommended": "پیشنهادی",
+    "selectedModel": "مدل انتخاب‌شده",
+    "helperReady": "برای درخواست‌های دستیار آماده است",
+    "loadError": "بارگذاری تنظیمات دستیار هوش مصنوعی ناموفق بود",
+    "baseUrl": {
+      "label": "آدرس پایه API",
+      "helper": "آدرس ریشه API این ارائه‌دهنده را وارد کنید. اگر ارائه‌دهنده به مسیر نسخه API نیاز دارد، آن را نیز اضافه کنید."
+    },
+    "activeProvider": {
+      "label": "پیکربندی ارائه‌دهنده",
+      "description": "الان می‌خواهید کدام ارائه‌دهنده را ویرایش کنید؟"
+    },
+    "currentSelection": "انتخاب فعلی",
+    "currentDefault": "پیش‌فرض",
+    "notDefault": "غیر پیش‌فرض",
+    "deepseek": {
+      "title": "DeepSeek",
+      "status": {
+        "label": "وضعیت",
+        "configured": "متصل",
+        "missing": "پیکربندی نشده"
+      },
+      "apiKey": {
+        "label": "کلید API",
+        "placeholder": "sk-...",
+        "helper": "برای نگه‌داشتن کلید فعلی، خالی بگذارید.",
+        "helperExisting": "برای نگه‌داشتن کلید فعلی، خالی بگذارید. برای جایگزینی، یک کلید جدید وارد کنید."
+      },
+      "model": {
+        "label": "مدل",
+        "placeholder": "deepseek-v4-pro",
+        "helper": "deepseek-v4-pro مدل پیشنهادی است؛ deepseek-v4-flash سریع‌تر است و deepseek-reasoner برای کارهای reasoning سنگین مناسب است."
+      },
+      "save": "ذخیره تنظیمات DeepSeek",
+      "saved": "تنظیمات DeepSeek ذخیره شد",
+      "loadError": "بارگذاری تنظیمات DeepSeek ناموفق بود",
+      "saveError": "ذخیره تنظیمات DeepSeek ناموفق بود",
+      "apiKeyRequired": "کلید API دیپ‌سیک لازم است",
+      "helperReady": "آماده برای درخواست‌های دستیار",
+      "helperMissing": "نیاز به کلید API",
+      "testConnection": "آزمایش اتصال",
+      "testSuccess": "اتصال موفق بود",
+      "testError": "آزمایش اتصال ناموفق بود"
+    },
+    "claude": {
+      "title": "Claude (Anthropic)",
+      "status": {
+        "label": "وضعیت",
+        "configured": "متصل",
+        "missing": "پیکربندی نشده"
+      },
+      "apiKey": {
+        "label": "کلید API",
+        "placeholder": "sk-ant-...",
+        "helper": "برای نگه‌داشتن کلید فعلی، خالی بگذارید.",
+        "helperExisting": "برای نگه‌داشتن کلید فعلی، خالی بگذارید. برای جایگزینی، یک کلید جدید وارد کنید."
+      },
+      "model": {
+        "label": "مدل",
+        "placeholder": "claude-fable-5",
+        "helper": "Claude Fable 5 مدل پیشنهادی است؛ Mythos 5، Opus 4.8 و Sonnet 4.6 هم گزینه‌های خوبی هستند."
+      },
+      "save": "ذخیره تنظیمات Claude",
+      "saved": "تنظیمات Claude ذخیره شد",
+      "loadError": "بارگذاری تنظیمات Claude ناموفق بود",
+      "saveError": "ذخیره تنظیمات Claude ناموفق بود",
+      "apiKeyRequired": "کلید API کلود لازم است",
+      "helperReady": "آماده برای درخواست‌های دستیار",
+      "helperMissing": "نیاز به کلید API",
+      "testConnection": "آزمایش اتصال",
+      "testSuccess": "اتصال موفق بود",
+      "testError": "آزمایش اتصال ناموفق بود",
+      "adminApiKey": {
+        "label": "کلید API مدیریتی",
+        "placeholder": "sk-ant-admin-...",
+        "helper": "اختیاری است. برای همگام‌سازی واقعی مصرف و هزینه لازم می‌شود.",
+        "helperExisting": "برای نگه‌داشتن کلید مدیریتی فعلی، خالی بگذارید."
+      }
+    },
+    "openai": {
+      "title": "OpenAI",
+      "status": {
+        "label": "وضعیت",
+        "configured": "متصل",
+        "missing": "پیکربندی نشده"
+      },
+      "apiKey": {
+        "label": "کلید API",
+        "placeholder": "sk-...",
+        "helper": "برای نگه‌داشتن کلید فعلی، خالی بگذارید.",
+        "helperExisting": "برای نگه‌داشتن کلید فعلی، خالی بگذارید. برای جایگزینی، یک کلید جدید وارد کنید."
+      },
+      "model": {
+        "label": "مدل",
+        "placeholder": "gpt-5.5-2026-04-23",
+        "helper": "GPT-5.5 جدیدترین مدل عمومی است؛ GPT-5.4، GPT-5.2 و GPT-5.1 هم گزینه‌های خوبی هستند."
+      },
+      "save": "ذخیره تنظیمات OpenAI",
+      "saved": "تنظیمات OpenAI ذخیره شد",
+      "loadError": "بارگذاری تنظیمات OpenAI ناموفق بود",
+      "saveError": "ذخیره تنظیمات OpenAI ناموفق بود",
+      "apiKeyRequired": "کلید API اوپن‌ای‌آی لازم است",
+      "helperReady": "آماده برای درخواست‌های دستیار",
+      "helperMissing": "نیاز به کلید API",
+      "testConnection": "آزمایش اتصال",
+      "testSuccess": "اتصال موفق بود",
+      "testError": "آزمایش اتصال ناموفق بود"
+    },
+    "grok": {
+      "title": "Grok (xAI)",
+      "status": {
+        "label": "وضعیت",
+        "configured": "متصل",
+        "missing": "پیکربندی نشده"
+      },
+      "apiKey": {
+        "label": "کلید API",
+        "placeholder": "xai-...",
+        "helper": "برای نگه‌داشتن کلید فعلی، خالی بگذارید.",
+        "helperExisting": "برای نگه‌داشتن کلید فعلی، خالی بگذارید. برای جایگزینی، یک کلید جدید وارد کنید."
+      },
+      "model": {
+        "label": "مدل",
+        "placeholder": "grok-4.3",
+        "helper": "Grok 4.3 جدیدترین مدل عمومی است؛ Build 0.1 و Grok 3 هم گزینه‌های مناسبی هستند."
+      },
+      "save": "ذخیره تنظیمات Grok",
+      "saved": "تنظیمات Grok ذخیره شد",
+      "loadError": "بارگذاری تنظیمات Grok ناموفق بود",
+      "saveError": "ذخیره تنظیمات Grok ناموفق بود",
+      "apiKeyRequired": "کلید API xAI لازم است",
+      "helperReady": "آماده برای درخواست‌های دستیار",
+      "helperMissing": "نیاز به کلید API",
+      "testConnection": "آزمایش اتصال",
+      "testSuccess": "اتصال موفق بود",
+      "testError": "آزمایش اتصال ناموفق بود",
+      "managementKey": {
+        "label": "کلید مدیریتی",
+        "placeholder": "mgmt-...",
+        "helper": "اختیاری است. برای همگام‌سازی موجودی واقعی لازم است.",
+        "helperExisting": "برای نگه‌داشتن کلید مدیریتی فعلی، خالی بگذارید."
+      },
+      "teamId": {
+        "label": "شناسه تیم",
+        "placeholder": "team_...",
+        "helper": "برای همگام‌سازی موجودی و مصرف xAI لازم است."
+      }
+    },
+    "defaultProvider": {
+      "label": "ارائه‌دهنده پیش‌فرض هوش مصنوعی",
+      "description": "انتخاب کنید کدام ارائه‌دهنده به‌صورت پیش‌فرض درخواست‌های دستیار را مدیریت کند.",
+      "deepseek": "DeepSeek",
+      "claude": "Claude",
+      "openai": "OpenAI",
+      "grok": "Grok",
+      "saved": "ارائه‌دهنده پیش‌فرض به‌روزرسانی شد"
+    },
+    "billingStatus": {
+      "title": "وضعیت billing",
+      "description": "مشخص می‌کند کدام providerها موجودی زنده یا مصرف همگام‌شده دارند.",
+      "status": {
+        "live": "زنده",
+        "synced": "همگام‌شده",
+        "partial": "ناقص",
+        "fallback": "جایگزین",
+        "unavailable": "در دسترس نیست"
+      },
+      "providers": {
+        "deepseek": {
+          "title": "موجودی DeepSeek",
+          "helper": "وقتی کلید API ذخیره شود، موجودی زنده قابل نمایش است."
+        },
+        "claude": {
+          "title": "همگام‌سازی مصرف Claude",
+          "helper": "کلید Admin API برای همگام‌سازی ماهانه مصرف و هزینه لازم است."
+        },
+        "openai": {
+          "title": "جایگزین OpenAI",
+          "helper": "OpenAI در اینجا API عمومی موجودی ندارد، پس داده‌ها از مصرف اپ می‌آیند."
+        },
+        "grok": {
+          "title": "موجودی Grok",
+          "helper": "برای همگام‌سازی زنده موجودی، کلید مدیریت و شناسه تیم لازم است."
+        }
+      }
+    }
+  },
+  "widgets": {},
+  "promptTemplates": {
+    "title": "قالب‌های پرامپت",
+    "description": "قالب‌های پرامپت قابل‌استفاده‌ی مجدد بسازید. برای اجرا کافی است شناسه یا نام قالب را با مقادیر ورودی بدهید.",
+    "newTemplate": "قالب جدید",
+    "empty": "هنوز قالبی وجود ندارد. اولین قالب پرامپت خود را بسازید.",
+    "actions": "عملیات",
+    "runLabel": "اجرا",
+    "view": "نمایش",
+    "edit": "ویرایش",
+    "delete": "حذف",
+    "cancel": "لغو",
+    "save": "ذخیره",
+    "saving": "در حال ذخیره…",
+    "templateCount": "{count, plural, =0 {قالبی وجود ندارد} one {# قالب} other {# قالب}}",
+    "search": "جستجوی قالب‌ها…",
+    "loadError": "بارگذاری قالب ناموفق بود",
+    "saveError": "ذخیره قالب ناموفق بود",
+    "saved": "قالب ذخیره شد",
+    "deleted": "قالب حذف شد",
+    "deleteError": "حذف قالب ناموفق بود",
+    "runError": "اجرای قالب ناموفق بود",
+    "createTitle": "قالب پرامپت جدید",
+    "editTitle": "ویرایش قالب پرامپت",
+    "viewTitle": "نمایش قالب پرامپت",
+    "runTitle": "اجرای قالب",
+    "deleteTitle": "حذف قالب",
+    "deleteDescription": "این عملیات قابل بازگشت نیست. قالب و تمام ورودی‌ها و خروجی‌های آن به‌طور دائمی حذف خواهند شد.",
+    "types": {
+      "system": "سیستمی",
+      "module": "ماژول",
+      "user": "کاربر"
+    },
+    "columns": {
+      "name": "نام",
+      "description": "توضیحات",
+      "type": "نوع",
+      "inputs": "ورودی‌ها",
+      "outputs": "خروجی‌ها"
+    },
+    "form": {
+      "name": "نام",
+      "namePlaceholder": "مثلاً خلاصه‌سازی مقاله",
+      "description": "توضیحات",
+      "descriptionPlaceholder": "این قالب چه کاری انجام می‌دهد…",
+      "maxTokens": "حداکثر توکن",
+      "maxTokensHint": "خالی بگذارید تا از مقدار پیش‌فرض provider استفاده شود",
+      "systemPrompt": "پرامپت سیستم",
+      "systemPromptHelper": "دستورالعمل برای هوش مصنوعی. اگر خالی باشد، رفتار پیش‌فرض دستیار استفاده می‌شود.",
+      "systemPromptPlaceholder": "تو یک دستیار مفید هستی که…",
+      "userPrompt": "پرامپت کاربر",
+      "userPromptHelper": "از سینتکس '{{متغیر}}' برای مقادیر پویا استفاده کنید. مثال: متن زیر را خلاصه کن: '{{text}}'",
+      "userPromptPlaceholder": "خلاصه‌ای از این متن بنویس: '{{text}}'",
+      "inputs": "ورودی‌ها",
+      "addInput": "افزودن ورودی",
+      "noInputs": "ورودی‌ای تعریف نشده. از '{{متغیر}}' در پرامپت استفاده کنید و برای هر کدام یک ورودی اضافه کنید.",
+      "input": "ورودی",
+      "inputKey": "کلید (نام متغیر)",
+      "inputLabel": "برچسب",
+      "inputLabelPlaceholder": "مثلاً متن مقاله",
+      "inputDescription": "توضیحات (اختیاری)",
+      "required": "اجباری",
+      "outputs": "خروجی‌ها",
+      "addOutput": "افزودن خروجی",
+      "noOutputs": "خروجی‌ای تعریف نشده (متادیتای اختیاری درباره پاسخ هوش مصنوعی).",
+      "output": "خروجی",
+      "outputKey": "کلید",
+      "outputLabel": "برچسب",
+      "outputLabelPlaceholder": "مثلاً خلاصه",
+      "outputDescription": "توضیحات (اختیاری)"
+    },
+    "run": {
+      "noInputs": "این قالب ورودی ندارد. برای اجرا روی دکمه اجرا کلیک کنید.",
+      "output": "خروجی",
+      "run": "اجرا",
+      "running": "در حال اجرا…"
+    }
+  }
+}

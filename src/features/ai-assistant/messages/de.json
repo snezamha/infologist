@@ -1,0 +1,277 @@
+{
+  "name": "KI-Assistent",
+  "description": "KI-Anbieter und Modelle für den Assistenten konfigurieren.",
+  "menus": {
+    "management": "Verwaltung",
+    "prompt-templates": "Prompt-Vorlagen"
+  },
+  "management": {
+    "title": "Einstellungen für den KI-Assistenten",
+    "description": "Konfigurieren Sie die vom Assistenten verwendeten Anbieter und Modelle.",
+    "other": "Andere…",
+    "recommended": "Empfohlen",
+    "selectedModel": "Ausgewähltes Modell",
+    "helperReady": "Bereit für Assistenten-Anfragen",
+    "loadError": "KI-Assistent-Einstellungen konnten nicht geladen werden",
+    "baseUrl": {
+      "label": "Basis-URL",
+      "helper": "Die API-Stammadresse für diesen Anbieter. Fügen Sie den API-Versionspfad hinzu, wenn der Anbieter ihn benötigt."
+    },
+    "activeProvider": {
+      "label": "Anbieter konfigurieren",
+      "description": "Wählen Sie, welchen Anbieter Sie jetzt bearbeiten möchten."
+    },
+    "currentSelection": "Aktuelle Auswahl",
+    "currentDefault": "Standard",
+    "notDefault": "Nicht Standard",
+    "deepseek": {
+      "title": "DeepSeek",
+      "status": {
+        "label": "Status",
+        "configured": "Verbunden",
+        "missing": "Nicht konfiguriert"
+      },
+      "apiKey": {
+        "label": "API-Schlüssel",
+        "placeholder": "sk-...",
+        "helper": "Leer lassen, um den aktuellen Schlüssel beizubehalten.",
+        "helperExisting": "Leer lassen, um den aktuellen Schlüssel beizubehalten. Einen neuen Schlüssel eingeben, um ihn zu ersetzen."
+      },
+      "model": {
+        "label": "Modell",
+        "placeholder": "deepseek-v4-pro",
+        "helper": "Verwenden Sie deepseek-v4-pro oder deepseek-v4-flash für die neueste V4-Version; deepseek-reasoner ist für reasoning-lastige Aufgaben verfügbar."
+      },
+      "save": "DeepSeek-Einstellungen speichern",
+      "saved": "DeepSeek-Einstellungen gespeichert",
+      "loadError": "DeepSeek-Einstellungen konnten nicht geladen werden",
+      "saveError": "DeepSeek-Einstellungen konnten nicht gespeichert werden",
+      "apiKeyRequired": "Ein DeepSeek-API-Schlüssel ist erforderlich",
+      "helperReady": "Bereit für Assistenten-Anfragen",
+      "helperMissing": "API-Schlüssel erforderlich",
+      "testConnection": "Verbindung testen",
+      "testSuccess": "Verbindung erfolgreich",
+      "testError": "Verbindungstest fehlgeschlagen"
+    },
+    "claude": {
+      "title": "Claude (Anthropic)",
+      "status": {
+        "label": "Status",
+        "configured": "Verbunden",
+        "missing": "Nicht konfiguriert"
+      },
+      "apiKey": {
+        "label": "API-Schlüssel",
+        "placeholder": "sk-ant-...",
+        "helper": "Leer lassen, um den aktuellen Schlüssel beizubehalten.",
+        "helperExisting": "Leer lassen, um den aktuellen Schlüssel beizubehalten. Neuen Schlüssel eingeben zum Ersetzen."
+      },
+      "model": {
+        "label": "Modell",
+        "placeholder": "claude-fable-5",
+        "helper": "Claude Fable 5 ist das neueste Flaggschiff; Mythos 5, Opus 4.8 und Sonnet 4.6 sind starke Alternativen."
+      },
+      "save": "Claude-Einstellungen speichern",
+      "saved": "Claude-Einstellungen gespeichert",
+      "loadError": "Claude-Einstellungen konnten nicht geladen werden",
+      "saveError": "Claude-Einstellungen konnten nicht gespeichert werden",
+      "apiKeyRequired": "Ein Claude-API-Schlüssel ist erforderlich",
+      "helperReady": "Bereit für Assistenten-Anfragen",
+      "helperMissing": "API-Schlüssel erforderlich",
+      "testConnection": "Verbindung testen",
+      "testSuccess": "Verbindung erfolgreich",
+      "testError": "Verbindungstest fehlgeschlagen",
+      "adminApiKey": {
+        "label": "Admin-API-Schlüssel",
+        "placeholder": "sk-ant-admin-...",
+        "helper": "Optional. Für Live-Nutzungs- und Kostensync erforderlich.",
+        "helperExisting": "Leer lassen, um den aktuellen Admin-Schlüssel beizubehalten."
+      }
+    },
+    "openai": {
+      "title": "OpenAI",
+      "status": {
+        "label": "Status",
+        "configured": "Verbunden",
+        "missing": "Nicht konfiguriert"
+      },
+      "apiKey": {
+        "label": "API-Schlüssel",
+        "placeholder": "sk-...",
+        "helper": "Leer lassen, um den aktuellen Schlüssel beizubehalten.",
+        "helperExisting": "Leer lassen, um den aktuellen Schlüssel beizubehalten. Neuen Schlüssel eingeben zum Ersetzen."
+      },
+      "model": {
+        "label": "Modell",
+        "placeholder": "gpt-5.5-2026-04-23",
+        "helper": "GPT-5.5 ist das neueste Allzweckmodell; GPT-5.4, GPT-5.2 und GPT-5.1 sind gute Alternativen."
+      },
+      "save": "OpenAI-Einstellungen speichern",
+      "saved": "OpenAI-Einstellungen gespeichert",
+      "loadError": "OpenAI-Einstellungen konnten nicht geladen werden",
+      "saveError": "OpenAI-Einstellungen konnten nicht gespeichert werden",
+      "apiKeyRequired": "Ein OpenAI-API-Schlüssel ist erforderlich",
+      "helperReady": "Bereit für Assistenten-Anfragen",
+      "helperMissing": "API-Schlüssel erforderlich",
+      "testConnection": "Verbindung testen",
+      "testSuccess": "Verbindung erfolgreich",
+      "testError": "Verbindungstest fehlgeschlagen"
+    },
+    "grok": {
+      "title": "Grok (xAI)",
+      "status": {
+        "label": "Status",
+        "configured": "Verbunden",
+        "missing": "Nicht konfiguriert"
+      },
+      "apiKey": {
+        "label": "API-Schlüssel",
+        "placeholder": "xai-...",
+        "helper": "Leer lassen, um den aktuellen Schlüssel beizubehalten.",
+        "helperExisting": "Leer lassen, um den aktuellen Schlüssel beizubehalten. Neuen Schlüssel eingeben zum Ersetzen."
+      },
+      "model": {
+        "label": "Modell",
+        "placeholder": "grok-4.3",
+        "helper": "Grok 4.3 ist das neueste Allzweckmodell; Build 0.1 und Grok 3 sind gültige Alternativen."
+      },
+      "save": "Grok-Einstellungen speichern",
+      "saved": "Grok-Einstellungen gespeichert",
+      "loadError": "Grok-Einstellungen konnten nicht geladen werden",
+      "saveError": "Grok-Einstellungen konnten nicht gespeichert werden",
+      "apiKeyRequired": "Ein xAI-API-Schlüssel ist erforderlich",
+      "helperReady": "Bereit für Assistenten-Anfragen",
+      "helperMissing": "API-Schlüssel erforderlich",
+      "testConnection": "Verbindung testen",
+      "testSuccess": "Verbindung erfolgreich",
+      "testError": "Verbindungstest fehlgeschlagen",
+      "managementKey": {
+        "label": "Management-Schlüssel",
+        "placeholder": "mgmt-...",
+        "helper": "Optional. Für den Live-Guthabensync erforderlich.",
+        "helperExisting": "Leer lassen, um den aktuellen Management-Schlüssel zu behalten."
+      },
+      "teamId": {
+        "label": "Team-ID",
+        "placeholder": "team_...",
+        "helper": "Für xAI-Guthaben- und Nutzungs-Sync erforderlich."
+      }
+    },
+    "defaultProvider": {
+      "label": "Standard-KI-Anbieter",
+      "description": "Wählen Sie, welcher Anbieter Assistenten-Anfragen standardmäßig verarbeitet.",
+      "deepseek": "DeepSeek",
+      "claude": "Claude",
+      "openai": "OpenAI",
+      "grok": "Grok",
+      "saved": "Standard-Anbieter aktualisiert"
+    },
+    "billingStatus": {
+      "title": "Billing-Status",
+      "description": "Zeigt, welche Anbieter Live-Guthaben oder synchronisierte Nutzung melden können.",
+      "status": {
+        "live": "Live",
+        "synced": "Synchronisiert",
+        "partial": "Teilweise",
+        "fallback": "Fallback",
+        "unavailable": "Nicht verfügbar"
+      },
+      "providers": {
+        "deepseek": {
+          "title": "DeepSeek-Guthaben",
+          "helper": "Live-Guthaben ist verfügbar, wenn ein DeepSeek-API-Schlüssel gespeichert ist."
+        },
+        "claude": {
+          "title": "Claude-Nutzungssync",
+          "helper": "Ein Admin-API-Schlüssel aktiviert den monatlichen Nutzungs- und Kostensync."
+        },
+        "openai": {
+          "title": "OpenAI-Fallback",
+          "helper": "OpenAI stellt hier keine öffentliche Balance-API bereit, daher bleibt die Nutzung app-basiert."
+        },
+        "grok": {
+          "title": "Grok-Guthaben",
+          "helper": "Management-Schlüssel und Team-ID sind für den Live-Guthabensync erforderlich."
+        }
+      }
+    }
+  },
+  "widgets": {},
+  "promptTemplates": {
+    "title": "Prompt-Vorlagen",
+    "description": "Erstellen Sie wiederverwendbare Prompt-Vorlagen. Übergeben Sie eine ID oder einen Namen mit Eingabewerten, um sie überall auszuführen.",
+    "newTemplate": "Neue Vorlage",
+    "empty": "Noch keine Vorlagen vorhanden. Erstellen Sie Ihre erste Prompt-Vorlage.",
+    "actions": "Aktionen",
+    "runLabel": "Ausführen",
+    "view": "Anzeigen",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "cancel": "Abbrechen",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "templateCount": "{count, plural, =0 {Keine Vorlagen} one {# Vorlage} other {# Vorlagen}}",
+    "search": "Vorlagen durchsuchen…",
+    "loadError": "Vorlage konnte nicht geladen werden",
+    "saveError": "Vorlage konnte nicht gespeichert werden",
+    "saved": "Vorlage gespeichert",
+    "deleted": "Vorlage gelöscht",
+    "deleteError": "Vorlage konnte nicht gelöscht werden",
+    "runError": "Vorlage konnte nicht ausgeführt werden",
+    "createTitle": "Neue Prompt-Vorlage",
+    "editTitle": "Prompt-Vorlage bearbeiten",
+    "viewTitle": "Prompt-Vorlage anzeigen",
+    "runTitle": "Vorlage ausführen",
+    "deleteTitle": "Vorlage löschen",
+    "deleteDescription": "Diese Aktion kann nicht rückgängig gemacht werden. Die Vorlage und alle ihre Ein- und Ausgaben werden dauerhaft entfernt.",
+    "types": {
+      "system": "System",
+      "module": "Modul",
+      "user": "Benutzer"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Beschreibung",
+      "type": "Typ",
+      "inputs": "Eingaben",
+      "outputs": "Ausgaben"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "z. B. Artikel zusammenfassen",
+      "description": "Beschreibung",
+      "descriptionPlaceholder": "Was diese Vorlage macht…",
+      "maxTokens": "Max. Tokens",
+      "maxTokensHint": "Leer lassen, um den Standardwert des Anbieters zu verwenden",
+      "systemPrompt": "System-Prompt",
+      "systemPromptHelper": "Anweisungen für die KI. Leer lassen für das Standardverhalten des Assistenten.",
+      "systemPromptPlaceholder": "Du bist ein hilfreicher Assistent, der…",
+      "userPrompt": "Benutzer-Prompt",
+      "userPromptHelper": "Verwenden Sie die '{{Variable}}'-Syntax für dynamische Werte. Beispiel: Fasse diesen Text zusammen: '{{text}}'",
+      "userPromptPlaceholder": "Schreibe eine Zusammenfassung von: '{{text}}'",
+      "inputs": "Eingaben",
+      "addInput": "Eingabe hinzufügen",
+      "noInputs": "Keine Eingaben definiert. Verwenden Sie '{{Variable}}' im Prompt und fügen Sie für jede eine Eingabe hinzu.",
+      "input": "Eingabe",
+      "inputKey": "Schlüssel (Variablenname)",
+      "inputLabel": "Bezeichnung",
+      "inputLabelPlaceholder": "z. B. Artikeltext",
+      "inputDescription": "Beschreibung (optional)",
+      "required": "Pflichtfeld",
+      "outputs": "Ausgaben",
+      "addOutput": "Ausgabe hinzufügen",
+      "noOutputs": "Keine Ausgaben definiert (optionale Metadaten zur KI-Antwort).",
+      "output": "Ausgabe",
+      "outputKey": "Schlüssel",
+      "outputLabel": "Bezeichnung",
+      "outputLabelPlaceholder": "z. B. Zusammenfassung",
+      "outputDescription": "Beschreibung (optional)"
+    },
+    "run": {
+      "noInputs": "Diese Vorlage hat keine Eingaben. Klicken Sie auf Ausführen.",
+      "output": "Ausgabe",
+      "run": "Ausführen",
+      "running": "Wird ausgeführt…"
+    }
+  }
+}

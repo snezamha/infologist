@@ -1,0 +1,41 @@
+.dark {
+  --puck-color-grey-01: #0a0a0a;
+  --puck-color-grey-02: #141414;
+  --puck-color-grey-03: #d4d4d4;
+  --puck-color-grey-04: #c7c7c7;
+  --puck-color-grey-05: #a3a3a3;
+  --puck-color-grey-06: #8f8f8f;
+  --puck-color-grey-07: #737373;
+  --puck-color-grey-08: #525252;
+  --puck-color-grey-09: #3a3a3a;
+  --puck-color-grey-10: #2a2a2a;
+  --puck-color-grey-11: #222222;
+  --puck-color-grey-12: #1a1a1a;
+  --puck-color-black: #f5f5f5;
+  --puck-color-white: #262626;
+  --puck-color-azure-02: #1a3a5c;
+  --puck-color-azure-03: #1e4570;
+  --puck-color-azure-04: #6ba3d9;
+  --puck-color-azure-05: #4d8fc9;
+  --puck-color-azure-06: #3d7ab8;
+  --puck-color-azure-07: #88b0da;
+  --puck-color-azure-08: #5a9fd4;
+  --puck-color-azure-09: #2a4259;
+  --puck-color-azure-10: #1f3347;
+  --puck-color-azure-11: #1a2d40;
+  --puck-color-azure-12: #152535;
+}
+
+.dark [class*="Puck"] {
+  color-scheme: dark;
+}
+
+.dark [class*="Select-items"],
+.dark [class*="PuckCanvas-root"],
+.dark [class*="FieldsPlugin_"] {
+  background: var(--puck-color-white);
+}
+
+.dark [class*="MenuBar_"] {
+  background-color: var(--puck-color-white);
+}

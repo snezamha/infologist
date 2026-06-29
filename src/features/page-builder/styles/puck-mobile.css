@@ -1,0 +1,19 @@
+@media (max-width: 637px) {
+  [data-puck-component],
+  [data-puck-dropzone] {
+    touch-action: none;
+    overscroll-behavior: contain;
+  }
+
+  [class*="Sidebar--left"][class*="Sidebar--isVisible"] {
+    overflow-x: visible;
+  }
+
+  [class*="PuckPluginTab-body"] {
+    overflow-x: visible;
+  }
+
+  [data-radix-popper-content-wrapper] {
+    z-index: 100;
+  }
+}

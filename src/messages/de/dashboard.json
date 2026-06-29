@@ -1,0 +1,147 @@
+{
+  "title": "Dashboard",
+  "home": {
+    "overview": "Übersicht",
+    "welcome": "Willkommen zurück, {name}"
+  },
+  "usersOverview": {
+    "title": "Benutzerübersicht",
+    "description": "Eine Zusammenfassung der registrierten Benutzer und ihrer Rollen.",
+    "total": "Benutzer gesamt",
+    "lastLogin": "Ihr letzter Login",
+    "noLogin": "Nie"
+  },
+  "widgets": {
+    "title": "Widgets",
+    "description": "Aktive Dashboard-Widgets aus verfuegbaren Funktionen.",
+    "empty": "Keine aktiven Widgets.",
+    "expand": "Erweitern",
+    "collapse": "Verkleinern",
+    "minimize": "Minimieren",
+    "userOverview": {
+      "name": "Benutzerübersicht"
+    },
+    "customize": "Widgets anpassen"
+  },
+  "account": "Konto",
+  "email": "E-Mail",
+  "role": "Rolle",
+  "signOut": "Abmelden",
+  "roles": {
+    "super_admin": "Super-Admin",
+    "admin": "Admin",
+    "user": "Benutzer"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "profile": "Profil",
+    "users": "Benutzer",
+    "projects": "Projekte",
+    "projectFeatures": "Funktionen",
+    "projectMedia": "Medien",
+    "projectMediaLibrary": "Bibliothek",
+    "projectMediaUpload": "Medium hinzufügen",
+    "projectMediaSettings": "Einstellungen",
+    "modules": "Module",
+    "settings": "Einstellungen"
+  },
+  "modulesPage": {
+    "title": "Funktionen",
+    "description": "Verfuegbare Funktionen und ihre Einstellungen verwalten.",
+    "meta": "{active} aktiv von {total} gesamt",
+    "noData": "Keine Funktionen verfuegbar",
+    "settingsLabel": "Einstellungen",
+    "searchPlaceholder": "Funktionen suchen...",
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Beschreibung",
+      "type": "Typ",
+      "version": "Version",
+      "actions": "Aktionen"
+    },
+    "types": {
+      "core": "Kern",
+      "site": "Website",
+      "admin": "Admin"
+    },
+    "exportModule": "Exportieren",
+    "exportFailed": "Export fehlgeschlagen",
+    "exportTooltip": "Modul als ZIP exportieren (inkl. Code + Daten-Snapshot, zum Übertragen zwischen Installationen)",
+    "dataTooltip": "Moduldaten exportieren & importieren",
+    "importModule": "Importieren",
+    "importTooltip": "Modul aus ZIP importieren",
+    "importLoading": "Modul wird hochgeladen...",
+    "importProcessing": "Verarbeitung...",
+    "importDone": "Funktion erfolgreich importiert",
+    "importFailed": "Import fehlgeschlagen",
+    "importInvalidFile": "Bitte eine gültige .zip-Datei auswählen",
+    "deleteModule": "Löschen",
+    "deleteConfirmTitle": "\"{name}\" löschen?",
+    "deleteConfirmDescription": "Dieses Modul und alle zugehörigen Daten werden dauerhaft von der Festplatte gelöscht. Diese Aktion kann nicht rückgängig gemacht werden.",
+    "deleteConfirmAction": "Ja, löschen",
+    "deleteCancel": "Abbrechen",
+    "deleteLoading": "Funktion wird geloescht...",
+    "deleteSuccess": "Funktion \"{name}\" entfernt",
+    "deleteFailed": "Löschen fehlgeschlagen",
+    "statusUpdated": "Modulstatus aktualisiert",
+    "statusUpdateFailed": "Status konnte nicht aktualisiert werden",
+    "settings": {
+      "title": "{moduleName} – Einstellungen",
+      "description": "Navigation, Zugriffsrollen und Anzeigeoptionen fuer diese Funktion konfigurieren.",
+      "notFound": "Funktion nicht gefunden",
+      "failedToLoad": "Funktionseinstellungen konnten nicht geladen werden",
+      "updateSuccess": "Einstellungen gespeichert",
+      "updateFailed": "Einstellungen konnten nicht gespeichert werden",
+      "saveConfig": "Speichern",
+      "tabSettings": "Einstellungen",
+      "tabNavigation": "Navigation",
+      "tabElements": "Elemente",
+      "menuSectionTitle": "Navigationsmenü",
+      "menuConfigDescription": "Seiten konfigurieren, die in der Seitenleiste angezeigt werden.",
+      "noPages": "Diese Funktion hat keine konfigurierbaren Seiten.",
+      "menuName": "Seite",
+      "urlPath": "URL",
+      "icon": "Symbol",
+      "accessFor": "Zugriff für",
+      "mainIcon": "Funktionssymbol",
+      "displayConfigTitle": "Dashboard-Elemente",
+      "dashboardWidgets": "Widgets",
+      "frontendComponents": "Frontend-Komponenten",
+      "enableWidget": "Im Dashboard anzeigen",
+      "enableFrontend": "Aktiviert",
+      "previewComp": "Vorschau: {component}",
+      "copiedToClipboard": "Kopiert",
+      "customSettingsTitle": "Funktionseinstellungen"
+    },
+    "importWithDataDone": "Funktion und Daten erfolgreich importiert"
+  },
+  "pluginsPage": {
+    "title": "Plugins",
+    "description": "Integrierte Plugins und ihre Einstellungen verwalten.",
+    "meta": "{active} aktiv von {total} gesamt",
+    "noData": "Keine Plugins registriert",
+    "searchPlaceholder": "Plugins suchen...",
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Beschreibung",
+      "version": "Version",
+      "status": "Status",
+      "actions": "Aktionen"
+    },
+    "managePlugins": "Plugins verwalten",
+    "statusUpdated": "Plugin-Status aktualisiert",
+    "statusUpdateFailed": "Plugin-Status konnte nicht aktualisiert werden",
+    "settingsLabel": "Einstellungen",
+    "requiredBadge": "Erforderlich",
+    "openPlugin": "Öffnen",
+    "dataButton": "Daten"
+  }
+}

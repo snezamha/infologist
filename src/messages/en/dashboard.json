@@ -1,0 +1,147 @@
+{
+  "title": "Dashboard",
+  "home": {
+    "overview": "Overview",
+    "welcome": "Welcome back, {name}"
+  },
+  "usersOverview": {
+    "title": "Users Overview",
+    "description": "A summary of registered users and their roles.",
+    "total": "Total Users",
+    "lastLogin": "Your Last Login",
+    "noLogin": "Never"
+  },
+  "widgets": {
+    "title": "Widgets",
+    "description": "Active dashboard widgets from available features.",
+    "empty": "No active widgets.",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "minimize": "Minimize",
+    "userOverview": {
+      "name": "Users Overview"
+    },
+    "customize": "Customize widgets"
+  },
+  "account": "Account",
+  "email": "Email",
+  "role": "Role",
+  "signOut": "Sign out",
+  "roles": {
+    "super_admin": "Super Admin",
+    "admin": "Admin",
+    "user": "User"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "users": "Users",
+    "projects": "Projects",
+    "projectFeatures": "Features",
+    "projectMedia": "Media",
+    "projectMediaLibrary": "Library",
+    "projectMediaUpload": "Add media",
+    "projectMediaSettings": "Settings",
+    "modules": "Modules",
+    "settings": "Settings"
+  },
+  "modulesPage": {
+    "title": "Features",
+    "description": "Manage available features and their settings.",
+    "meta": "{active} active of {total} total",
+    "noData": "No features available",
+    "settingsLabel": "Settings",
+    "searchPlaceholder": "Search features...",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "version": "Version",
+      "actions": "Actions"
+    },
+    "types": {
+      "core": "Core",
+      "site": "Site",
+      "admin": "Admin"
+    },
+    "exportModule": "Export",
+    "exportFailed": "Export failed",
+    "exportTooltip": "Export module as ZIP (includes code + data snapshot, for moving between installations)",
+    "dataTooltip": "Export & import module data",
+    "importModule": "Import",
+    "importTooltip": "Import module from ZIP",
+    "importLoading": "Uploading module...",
+    "importProcessing": "Processing...",
+    "importDone": "Feature imported successfully",
+    "importFailed": "Import failed",
+    "importInvalidFile": "Please select a valid .zip file",
+    "deleteModule": "Delete",
+    "deleteConfirmTitle": "Delete \"{name}\"?",
+    "deleteConfirmDescription": "This will permanently remove the module and all its data from disk. This action cannot be undone.",
+    "deleteConfirmAction": "Yes, delete",
+    "deleteCancel": "Cancel",
+    "deleteLoading": "Deleting feature...",
+    "deleteSuccess": "Feature \"{name}\" removed",
+    "deleteFailed": "Delete failed",
+    "statusUpdated": "Module status updated",
+    "statusUpdateFailed": "Failed to update module status",
+    "settings": {
+      "title": "{moduleName} – Settings",
+      "description": "Configure navigation, access roles, and display options for this feature.",
+      "notFound": "Feature not found",
+      "failedToLoad": "Failed to load feature settings",
+      "updateSuccess": "Settings saved",
+      "updateFailed": "Failed to save settings",
+      "saveConfig": "Save",
+      "tabSettings": "Settings",
+      "tabNavigation": "Navigation",
+      "tabElements": "Elements",
+      "menuSectionTitle": "Navigation Menu",
+      "menuConfigDescription": "Configure which pages appear in the sidebar and who can access them.",
+      "noPages": "This feature has no configurable pages.",
+      "menuName": "Page",
+      "urlPath": "URL",
+      "icon": "Icon",
+      "accessFor": "Access for",
+      "mainIcon": "Feature Icon",
+      "displayConfigTitle": "Dashboard Elements",
+      "dashboardWidgets": "Widgets",
+      "frontendComponents": "Frontend Components",
+      "enableWidget": "Show in dashboard",
+      "enableFrontend": "Enabled",
+      "previewComp": "Preview: {component}",
+      "copiedToClipboard": "Copied to clipboard",
+      "customSettingsTitle": "Feature Settings"
+    },
+    "importWithDataDone": "Feature and data imported successfully"
+  },
+  "pluginsPage": {
+    "title": "Plugins",
+    "description": "Manage built-in plugins and their settings.",
+    "meta": "{active} active of {total} total",
+    "noData": "No plugins registered",
+    "searchPlaceholder": "Search plugins...",
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Description",
+      "version": "Version",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "managePlugins": "Manage Plugins",
+    "statusUpdated": "Plugin status updated",
+    "statusUpdateFailed": "Failed to update plugin status",
+    "settingsLabel": "Settings",
+    "requiredBadge": "Required",
+    "openPlugin": "Open",
+    "dataButton": "Data"
+  }
+}

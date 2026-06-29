@@ -1,0 +1,277 @@
+{
+  "name": "AI Assistant",
+  "description": "Configure AI providers and models for the assistant.",
+  "menus": {
+    "management": "Management",
+    "prompt-templates": "Prompt Templates"
+  },
+  "management": {
+    "title": "AI Assistant settings",
+    "description": "Configure the AI providers and models used by the assistant.",
+    "other": "Other…",
+    "recommended": "Recommended",
+    "selectedModel": "Selected model",
+    "helperReady": "Ready for assistant requests",
+    "loadError": "Failed to load AI Assistant settings",
+    "baseUrl": {
+      "label": "Base URL",
+      "helper": "The API root used for this provider. Include the API version path when the provider requires it."
+    },
+    "activeProvider": {
+      "label": "Configure provider",
+      "description": "Choose which provider you want to edit right now."
+    },
+    "currentSelection": "Current selection",
+    "currentDefault": "Default",
+    "notDefault": "Not default",
+    "deepseek": {
+      "title": "DeepSeek",
+      "status": {
+        "label": "Status",
+        "configured": "Connected",
+        "missing": "Not configured"
+      },
+      "apiKey": {
+        "label": "API key",
+        "placeholder": "sk-...",
+        "helper": "Leave blank to keep the current key.",
+        "helperExisting": "Leave blank to keep the current key. Enter a new key to replace it."
+      },
+      "model": {
+        "label": "Model",
+        "placeholder": "deepseek-v4-pro",
+        "helper": "Use deepseek-v4-pro or deepseek-v4-flash for the newest V4 release; deepseek-reasoner is available for reasoning-heavy tasks."
+      },
+      "save": "Save DeepSeek settings",
+      "saved": "DeepSeek settings saved",
+      "loadError": "Failed to load DeepSeek settings",
+      "saveError": "Failed to save DeepSeek settings",
+      "apiKeyRequired": "A DeepSeek API key is required",
+      "helperReady": "Ready for assistant requests",
+      "helperMissing": "API key required",
+      "testConnection": "Test connection",
+      "testSuccess": "Connection successful",
+      "testError": "Connection test failed"
+    },
+    "claude": {
+      "title": "Claude (Anthropic)",
+      "status": {
+        "label": "Status",
+        "configured": "Connected",
+        "missing": "Not configured"
+      },
+      "apiKey": {
+        "label": "API key",
+        "placeholder": "sk-ant-...",
+        "helper": "Leave blank to keep the current key.",
+        "helperExisting": "Leave blank to keep the current key. Enter a new key to replace it."
+      },
+      "model": {
+        "label": "Model",
+        "placeholder": "claude-fable-5",
+        "helper": "Claude Fable 5 is the latest flagship; Mythos 5, Opus 4.8, and Sonnet 4.6 are strong alternatives."
+      },
+      "save": "Save Claude settings",
+      "saved": "Claude settings saved",
+      "loadError": "Failed to load Claude settings",
+      "saveError": "Failed to save Claude settings",
+      "apiKeyRequired": "A Claude API key is required",
+      "helperReady": "Ready for assistant requests",
+      "helperMissing": "API key required",
+      "testConnection": "Test connection",
+      "testSuccess": "Connection successful",
+      "testError": "Connection test failed",
+      "adminApiKey": {
+        "label": "Admin API key",
+        "placeholder": "sk-ant-admin-...",
+        "helper": "Optional. Required for live usage and cost sync.",
+        "helperExisting": "Leave blank to keep the current admin key."
+      }
+    },
+    "openai": {
+      "title": "OpenAI",
+      "status": {
+        "label": "Status",
+        "configured": "Connected",
+        "missing": "Not configured"
+      },
+      "apiKey": {
+        "label": "API key",
+        "placeholder": "sk-...",
+        "helper": "Leave blank to keep the current key.",
+        "helperExisting": "Leave blank to keep the current key. Enter a new key to replace it."
+      },
+      "model": {
+        "label": "Model",
+        "placeholder": "gpt-5.5-2026-04-23",
+        "helper": "GPT-5.5 is the newest general-purpose model; GPT-5.4, GPT-5.2, and GPT-5.1 are good alternatives."
+      },
+      "save": "Save OpenAI settings",
+      "saved": "OpenAI settings saved",
+      "loadError": "Failed to load OpenAI settings",
+      "saveError": "Failed to save OpenAI settings",
+      "apiKeyRequired": "An OpenAI API key is required",
+      "helperReady": "Ready for assistant requests",
+      "helperMissing": "API key required",
+      "testConnection": "Test connection",
+      "testSuccess": "Connection successful",
+      "testError": "Connection test failed"
+    },
+    "grok": {
+      "title": "Grok (xAI)",
+      "status": {
+        "label": "Status",
+        "configured": "Connected",
+        "missing": "Not configured"
+      },
+      "apiKey": {
+        "label": "API key",
+        "placeholder": "xai-...",
+        "helper": "Leave blank to keep the current key.",
+        "helperExisting": "Leave blank to keep the current key. Enter a new key to replace it."
+      },
+      "model": {
+        "label": "Model",
+        "placeholder": "grok-4.3",
+        "helper": "Grok 4.3 is the newest general-purpose model; Build 0.1 and Grok 3 are valid alternatives."
+      },
+      "save": "Save Grok settings",
+      "saved": "Grok settings saved",
+      "loadError": "Failed to load Grok settings",
+      "saveError": "Failed to save Grok settings",
+      "apiKeyRequired": "An xAI API key is required",
+      "helperReady": "Ready for assistant requests",
+      "helperMissing": "API key required",
+      "testConnection": "Test connection",
+      "testSuccess": "Connection successful",
+      "testError": "Connection test failed",
+      "managementKey": {
+        "label": "Management key",
+        "placeholder": "mgmt-...",
+        "helper": "Optional. Required for live billing balance sync.",
+        "helperExisting": "Leave blank to keep the current management key."
+      },
+      "teamId": {
+        "label": "Team ID",
+        "placeholder": "team_...",
+        "helper": "Required for xAI billing balance and usage sync."
+      }
+    },
+    "defaultProvider": {
+      "label": "Default AI provider",
+      "description": "Choose which provider handles assistant requests by default.",
+      "deepseek": "DeepSeek",
+      "claude": "Claude",
+      "openai": "OpenAI",
+      "grok": "Grok",
+      "saved": "Default provider updated"
+    },
+    "billingStatus": {
+      "title": "Billing status",
+      "description": "Shows which providers can report live balance or synced usage.",
+      "status": {
+        "live": "Live",
+        "synced": "Synced",
+        "partial": "Partial",
+        "fallback": "Fallback",
+        "unavailable": "Unavailable"
+      },
+      "providers": {
+        "deepseek": {
+          "title": "DeepSeek balance",
+          "helper": "Live balance is available when a DeepSeek API key is saved."
+        },
+        "claude": {
+          "title": "Claude usage sync",
+          "helper": "Admin API key enables monthly usage and cost sync."
+        },
+        "openai": {
+          "title": "OpenAI fallback",
+          "helper": "OpenAI has no public balance API here, so usage remains app-backed."
+        },
+        "grok": {
+          "title": "Grok balance",
+          "helper": "Management key and team ID are required for live balance sync."
+        }
+      }
+    }
+  },
+  "widgets": {},
+  "promptTemplates": {
+    "title": "Prompt Templates",
+    "description": "Build reusable prompt templates. Pass an ID or name with input values to run them anywhere.",
+    "newTemplate": "New Template",
+    "empty": "No templates yet. Create your first prompt template.",
+    "actions": "Actions",
+    "runLabel": "Run",
+    "view": "View",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving…",
+    "templateCount": "{count, plural, =0 {No templates} one {# template} other {# templates}}",
+    "search": "Search templates…",
+    "loadError": "Failed to load template",
+    "saveError": "Failed to save template",
+    "saved": "Template saved",
+    "deleted": "Template deleted",
+    "deleteError": "Failed to delete template",
+    "runError": "Failed to run template",
+    "createTitle": "New Prompt Template",
+    "editTitle": "Edit Prompt Template",
+    "viewTitle": "View Prompt Template",
+    "runTitle": "Run Template",
+    "deleteTitle": "Delete Template",
+    "deleteDescription": "This action cannot be undone. The template and all its inputs and outputs will be permanently removed.",
+    "types": {
+      "system": "System",
+      "module": "Module",
+      "user": "User"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Description",
+      "type": "Type",
+      "inputs": "Inputs",
+      "outputs": "Outputs"
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "e.g. Summarize article",
+      "description": "Description",
+      "descriptionPlaceholder": "What this template does…",
+      "maxTokens": "Max Tokens",
+      "maxTokensHint": "Leave blank to use the provider default",
+      "systemPrompt": "System Prompt",
+      "systemPromptHelper": "Instructions for the AI. Leave blank to use the default assistant behavior.",
+      "systemPromptPlaceholder": "You are a helpful assistant that…",
+      "userPrompt": "User Prompt",
+      "userPromptHelper": "Use '{{variable}}' syntax for dynamic values. Example: Summarize this text: '{{text}}'",
+      "userPromptPlaceholder": "Write a summary of: '{{text}}'",
+      "inputs": "Inputs",
+      "addInput": "Add input",
+      "noInputs": "No inputs defined. Use '{{variable}}' in the prompt and add an input for each one.",
+      "input": "Input",
+      "inputKey": "Key (variable name)",
+      "inputLabel": "Label",
+      "inputLabelPlaceholder": "e.g. Article text",
+      "inputDescription": "Description (optional)",
+      "required": "Required",
+      "outputs": "Outputs",
+      "addOutput": "Add output",
+      "noOutputs": "No outputs defined (optional metadata about the AI response).",
+      "output": "Output",
+      "outputKey": "Key",
+      "outputLabel": "Label",
+      "outputLabelPlaceholder": "e.g. Summary",
+      "outputDescription": "Description (optional)"
+    },
+    "run": {
+      "noInputs": "This template has no inputs. Click Run to execute it.",
+      "output": "Output",
+      "run": "Run",
+      "running": "Running…"
+    }
+  }
+}

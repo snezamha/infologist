@@ -1,0 +1,1 @@
+node scripts/modules/validate-modules.mjs && npx lint-staged

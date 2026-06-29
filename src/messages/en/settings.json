@@ -1,0 +1,299 @@
+{
+  "title": "Settings",
+  "description": "Manage your site configuration",
+  "saved": "Settings saved",
+  "error": "Failed to save settings",
+  "save": "Save Changes",
+  "cancel": "Cancel",
+  "active": "Active",
+  "inactive": "Inactive",
+  "protectedBadge": "Protected",
+  "tabs": {
+    "seo": "SEO & Metadata",
+    "general": "General",
+    "appearance": "Appearance",
+    "features": "Features",
+    "domain": "Custom Domain"
+  },
+  "seo": {
+    "title": "SEO & Metadata",
+    "description": "Configure your site's SEO settings for each language.",
+    "siteTitle": "Site Title",
+    "siteTitlePlaceholder": "My Website",
+    "metaDescription": "Meta Description",
+    "metaDescriptionPlaceholder": "A brief description of your website",
+    "separator": "Separator",
+    "separatorPlaceholder": " | ",
+    "preview": "Preview",
+    "locales": {
+      "en": "English",
+      "fa": "Persian",
+      "de": "German"
+    }
+  },
+  "general": {
+    "title": "General Settings",
+    "description": "Configure language, timezone, and date/time formats.",
+    "siteLanguage": "Site Language",
+    "siteLanguageDescription": "Select the default language for your website.",
+    "timezone": "Timezone",
+    "timezoneDescription": "Choose either a city in the same timezone as you or a UTC offset.",
+    "dateFormat": "Date Format",
+    "dateFormatDescription": "Choose how dates are displayed on your site.",
+    "timeFormat": "Time Format",
+    "timeFormatDescription": "Choose between 12-hour and 24-hour time format.",
+    "dateFormats": {
+      "YYYY-MM-DD": "YYYY-MM-DD (2025-01-15)",
+      "DD/MM/YYYY": "DD/MM/YYYY (15/01/2025)",
+      "MM/DD/YYYY": "MM/DD/YYYY (01/15/2025)",
+      "D MMMM YYYY": "D MMMM YYYY (15 January 2025)",
+      "MMMM D, YYYY": "MMMM D, YYYY (January 15, 2025)"
+    },
+    "timeFormats": {
+      "HH:mm": "24-hour (14:30)",
+      "hh:mm A": "12-hour (02:30 PM)"
+    }
+  },
+  "appearance": {
+    "title": "Appearance Settings",
+    "description": "Customize the visual appearance of your dashboard.",
+    "colorScheme": "Color Scheme",
+    "colorSchemeDescription": "Choose the primary color for your interface.",
+    "customColor": "Custom color",
+    "customColorHex": "Hex code",
+    "borderRadius": "Border Radius",
+    "borderRadiusDescription": "Adjust the roundness of UI elements.",
+    "loading": {
+      "enabled": "Route loading indicator",
+      "description": "Show a smooth overlay while internal links and page transitions are loading.",
+      "spinner": "Loading spinner",
+      "spinnerDescription": "Choose an animated spinner from the svg-spinners collection.",
+      "chooseSpinner": "Choose spinner",
+      "spinnerModalTitle": "Choose loading spinner",
+      "spinnerModalDescription": "Select the option used for route loading.",
+      "selectSpinner": "Choose {spinner} spinner",
+      "colorMode": "Color source",
+      "colorModeDescription": "Use your active color scheme or pick a custom loading color.",
+      "color": "Custom color",
+      "size": "Size",
+      "position": "Position",
+      "preview": "Preview",
+      "colorModes": {
+        "theme": "Color scheme",
+        "custom": "Custom"
+      },
+      "groups": {
+        "rings": "Rings",
+        "dots": "Dots",
+        "bars": "Bars",
+        "blocks": "Blocks",
+        "pulses": "Pulses",
+        "other": "Other"
+      },
+      "positions": {
+        "top-start": "Top start",
+        "top-center": "Top center",
+        "top-end": "Top end",
+        "center": "Center",
+        "bottom-start": "Bottom start",
+        "bottom-center": "Bottom center",
+        "bottom-end": "Bottom end"
+      }
+    },
+    "preview": "Preview",
+    "previewButton": "Button",
+    "colors": {
+      "neutral": "Neutral",
+      "blue": "Blue",
+      "green": "Green",
+      "rose": "Rose",
+      "orange": "Orange",
+      "violet": "Violet",
+      "teal": "Teal",
+      "custom": "Custom"
+    },
+    "radius": {
+      "none": "None",
+      "sm": "Small",
+      "md": "Medium",
+      "lg": "Large",
+      "xl": "XLarge"
+    }
+  },
+  "features": {
+    "title": "Feature Management",
+    "description": "Enable the modules and plugins this project can use across core and frontend surfaces.",
+    "empty": "No active features are available for this project.",
+    "emptyFilter": "No features match the current filters.",
+    "save": "Save features",
+    "disableConfirmTitle": "Disable feature?",
+    "disableConfirmDescription": "Disabling {feature} stops the capability for this project. Existing feature data is kept so it can be re-enabled later.",
+    "disable": "Disable",
+    "searchPlaceholder": "Search features...",
+    "settingsToggle": "Settings",
+    "noSearchResults": "No features matching \"{query}\"",
+    "itemCount": "{count} features",
+    "filters": {
+      "all": "All",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "feature": "Feature",
+      "description": "Description",
+      "status": "Status"
+    },
+    "summary": {
+      "total": "Available features",
+      "active": "Active features"
+    },
+    "system": {
+      "title": "System features",
+      "description": "Built-in capabilities can be enabled or disabled per project."
+    },
+    "modules": {
+      "title": "Modules",
+      "description": "Deployable modules can be activated per project.",
+      "empty": "No modules are available for this project.",
+      "import": "Import",
+      "export": "Export",
+      "open": "Open",
+      "install": "Install",
+      "reactivate": "Reactivate",
+      "reinstallTooltip": "Reinstall this module and refresh its files",
+      "reinstall": "Reinstall",
+      "uninstallTooltip": "Deactivate this module for the project",
+      "uninstall": "Deactivate",
+      "delete": "Delete",
+      "add": "Add module",
+      "deleteConfirmTitle": "Delete module \\\"{name}\\\"?",
+      "deleteConfirmDescription": "This permanently removes the module from disk and clears its data from installed projects. This action cannot be undone.",
+      "searchPlaceholder": "Search modules...",
+      "noSearchResults": "No modules matching \"{query}\"",
+      "imported": "Module imported",
+      "exported": "Module exported",
+      "importFailed": "Failed to import module",
+      "exportFailed": "Failed to export module",
+      "installed": "Module installed",
+      "uninstalled": "Module deactivated; its data was preserved",
+      "installFailed": "Failed to install module",
+      "uninstallFailed": "Failed to deactivate module",
+      "deleted": "Module removed from all projects",
+      "deleteFailed": "Failed to delete module",
+      "uninstallConfirmTitle": "Deactivate {name}?",
+      "uninstallConfirmDescription": "Deactivating this module will disable it for this project. Its data will be preserved and can be restored if you reactivate it later.",
+      "deactivate": "Deactivate",
+      "importConflictTitle": "Module already exists",
+      "importConflictDescription": "The module {name} already exists (current version: {existingVersion}). Would you like to overwrite it with version {newVersion}?",
+      "importOverwrite": "Overwrite",
+      "importErrors": {
+        "invalidZip": "The uploaded file is not a valid module ZIP.",
+        "empty": "The module archive is empty.",
+        "tooManyFiles": "The module archive contains too many files.",
+        "invalidPath": "The module archive contains an invalid file path.",
+        "tooLarge": "The module archive is too large.",
+        "missingManifest": "The module archive is missing module.json.",
+        "invalidManifest": "The module manifest is invalid.",
+        "moduleNotAvailable": "Module is not available.",
+        "moduleServerConfigUnavailable": "Module source is available, but its server configuration is not ready yet. Please try again in a moment.",
+        "projectDatabaseNotConfigured": "Project database is not configured."
+      },
+      "status": {
+        "installed": "Installed",
+        "inactive": "Inactive",
+        "available": "Available",
+        "outdated": "Update available"
+      },
+      "filters": {
+        "all": "All",
+        "active": "Active",
+        "inactive": "Inactive",
+        "available": "Available"
+      },
+      "itemCount": "{count} modules",
+      "columns": {
+        "module": "Module",
+        "description": "Description",
+        "status": "Status"
+      },
+      "emptyFilter": "No modules match the current filters.",
+      "version": "Version {version}",
+      "missingDependencies": "Requires: {deps}",
+      "private": "Private",
+      "update": "Update",
+      "updateTooltip": "Install the latest version of this module",
+      "cascadeWarning": "The following active modules also depend on this and may stop working:",
+      "installDepsTitle": "Install required modules",
+      "installDepsDescription": "{module} requires the following modules:",
+      "installDepsInstallable": "Will be installed:",
+      "installDepsUnavailable": "Not found — install separately:",
+      "installWithDeps": "Install All"
+    },
+    "scopes": {
+      "core": "Core",
+      "frontend": "Frontend"
+    },
+    "deliveryModes": {
+      "module": "Module",
+      "plugin": "Plugin"
+    },
+    "items": {
+      "mediaManagement": {
+        "title": "Media management",
+        "description": "Adds the project media capability for storing, organizing, and reusing uploaded assets.",
+        "toggle": "Toggle media management"
+      },
+      "statistics": {
+        "title": "Statistics",
+        "description": "Enables visitor tracking and analytics for your project's public site.",
+        "toggle": "Toggle statistics"
+      },
+      "aiAssistant": {
+        "title": "AI Assistant",
+        "description": "Configures assistant models, providers, and prompt workflows for the project.",
+        "toggle": "Toggle AI Assistant"
+      },
+      "pageBuilder": {
+        "title": "Page Builder",
+        "description": "Visual page builder for creating and editing content layouts without code.",
+        "toggle": "Toggle page builder"
+      }
+    },
+    "settings": {
+      "mediaManagement": {
+        "maxFileSizeMB": {
+          "label": "Max file size",
+          "description": "Largest file size accepted for each media upload.",
+          "unit": "MB"
+        },
+        "maxHourlyUploadMB": {
+          "label": "Max hourly upload",
+          "description": "Maximum media upload volume allowed per user each hour.",
+          "unit": "MB"
+        },
+        "maxTotalStorageGB": {
+          "label": "Max total storage",
+          "description": "Maximum total storage capacity for this project's media library.",
+          "unit": "GB"
+        },
+        "maxStoragePerUserMB": {
+          "label": "Max storage per user",
+          "description": "Maximum media storage capacity assigned to each user.",
+          "unit": "MB"
+        }
+      },
+      "statistics": {
+        "sessionTimeoutSeconds": {
+          "label": "Session timeout",
+          "description": "Time after which an inactive visitor session is considered expired.",
+          "unit": "minutes"
+        },
+        "liveThresholdSeconds": {
+          "label": "Live threshold",
+          "description": "Time interval to consider a visitor session as currently active.",
+          "unit": "minutes"
+        }
+      }
+    }
+  }
+}

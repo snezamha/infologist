@@ -1,0 +1,299 @@
+{
+  "title": "تنظیمات",
+  "description": "مدیریت پیکربندی سایت",
+  "saved": "تنظیمات ذخیره شد",
+  "error": "ذخیره‌سازی ناموفق بود",
+  "save": "ذخیره تغییرات",
+  "cancel": "لغو",
+  "active": "فعال",
+  "inactive": "غیر فعال",
+  "protectedBadge": "محافظت‌شده",
+  "tabs": {
+    "seo": "سئو و متادیتا",
+    "general": "عمومی",
+    "appearance": "ظاهر",
+    "features": "ویژگی‌ها",
+    "domain": "دامنه اختصاصی"
+  },
+  "seo": {
+    "title": "سئو و متادیتا",
+    "description": "تنظیمات سئو سایت را برای هر زبان پیکربندی کنید.",
+    "siteTitle": "عنوان سایت",
+    "siteTitlePlaceholder": "وب‌سایت من",
+    "metaDescription": "توضیحات متا",
+    "metaDescriptionPlaceholder": "توضیح کوتاهی از وب‌سایت شما",
+    "separator": "جداکننده",
+    "separatorPlaceholder": " | ",
+    "preview": "پیش‌نمایش",
+    "locales": {
+      "en": "انگلیسی",
+      "fa": "فارسی",
+      "de": "آلمانی"
+    }
+  },
+  "general": {
+    "title": "تنظیمات عمومی",
+    "description": "زبان، منطقه زمانی و قالب‌های تاریخ/زمان را پیکربندی کنید.",
+    "siteLanguage": "زبان سایت",
+    "siteLanguageDescription": "زبان پیش‌فرض وب‌سایت خود را انتخاب کنید.",
+    "timezone": "منطقه زمانی",
+    "timezoneDescription": "شهری در منطقه زمانی خود یا آفست UTC انتخاب کنید.",
+    "dateFormat": "قالب تاریخ",
+    "dateFormatDescription": "نحوه نمایش تاریخ‌ها در سایت را انتخاب کنید.",
+    "timeFormat": "قالب زمان",
+    "timeFormatDescription": "بین قالب ۱۲ و ۲۴ ساعته انتخاب کنید.",
+    "dateFormats": {
+      "YYYY-MM-DD": "YYYY-MM-DD (2025-01-15)",
+      "DD/MM/YYYY": "DD/MM/YYYY (15/01/2025)",
+      "MM/DD/YYYY": "MM/DD/YYYY (01/15/2025)",
+      "D MMMM YYYY": "D MMMM YYYY (۱۵ ژانویه ۲۰۲۵)",
+      "MMMM D, YYYY": "MMMM D, YYYY (ژانویه ۱۵، ۲۰۲۵)"
+    },
+    "timeFormats": {
+      "HH:mm": "۲۴ ساعته (14:30)",
+      "hh:mm A": "۱۲ ساعته (02:30 PM)"
+    }
+  },
+  "appearance": {
+    "title": "تنظیمات ظاهری",
+    "description": "ظاهر بصری داشبورد را سفارشی کنید.",
+    "colorScheme": "طرح رنگی",
+    "colorSchemeDescription": "رنگ اصلی رابط کاربری را انتخاب کنید.",
+    "customColor": "رنگ سفارشی",
+    "customColorHex": "کد hex",
+    "borderRadius": "گوشه‌های گرد",
+    "borderRadiusDescription": "میزان گردی عناصر رابط کاربری را تنظیم کنید.",
+    "loading": {
+      "enabled": "لودینگ تغییر مسیر",
+      "description": "هنگام باز شدن لینک‌های داخلی و جابه‌جایی بین صفحات، یک لایه نرم نمایش داده شود.",
+      "spinner": "اسپینر لودینگ",
+      "spinnerDescription": "یک اسپینر متحرک از مجموعه svg-spinners انتخاب کنید.",
+      "chooseSpinner": "انتخاب اسپینر",
+      "spinnerModalTitle": "انتخاب اسپینر لودینگ",
+      "spinnerModalDescription": "یک گزینه را برای نمایش لودینگ تغییر مسیر انتخاب کنید.",
+      "selectSpinner": "انتخاب اسپینر {spinner}",
+      "colorMode": "منبع رنگ",
+      "colorModeDescription": "از طرح رنگی فعال استفاده کنید یا رنگ سفارشی انتخاب کنید.",
+      "color": "رنگ سفارشی",
+      "size": "اندازه",
+      "position": "جای قرارگیری",
+      "preview": "پیش‌نمایش",
+      "colorModes": {
+        "theme": "طرح رنگی",
+        "custom": "سفارشی"
+      },
+      "groups": {
+        "rings": "حلقه‌ها",
+        "dots": "نقطه‌ها",
+        "bars": "میله‌ها",
+        "blocks": "بلوک‌ها",
+        "pulses": "پالس‌ها",
+        "other": "سایر"
+      },
+      "positions": {
+        "top-start": "بالا ابتدا",
+        "top-center": "بالا وسط",
+        "top-end": "بالا انتها",
+        "center": "وسط",
+        "bottom-start": "پایین ابتدا",
+        "bottom-center": "پایین وسط",
+        "bottom-end": "پایین انتها"
+      }
+    },
+    "preview": "پیش‌نمایش",
+    "previewButton": "دکمه",
+    "colors": {
+      "neutral": "خنثی",
+      "blue": "آبی",
+      "green": "سبز",
+      "rose": "گل‌بهی",
+      "orange": "نارنجی",
+      "violet": "بنفش",
+      "teal": "فیروزه‌ای",
+      "custom": "سفارشی"
+    },
+    "radius": {
+      "none": "بدون",
+      "sm": "کوچک",
+      "md": "متوسط",
+      "lg": "بزرگ",
+      "xl": "خیلی بزرگ"
+    }
+  },
+  "features": {
+    "title": "مدیریت ویژگی‌ها",
+    "description": "ماژول‌ها و پلاگین‌هایی را فعال کنید که این پروژه در هسته و فرانت‌اند می‌تواند استفاده کند.",
+    "empty": "ویژگی فعالی برای این پروژه در دسترس نیست.",
+    "emptyFilter": "هیچ ویژگی‌ای با فیلترهای فعلی پیدا نشد.",
+    "save": "ذخیره ویژگی‌ها",
+    "disableConfirmTitle": "ویژگی غیرفعال شود؟",
+    "disableConfirmDescription": "غیرفعال‌کردن {feature} فقط این قابلیت را متوقف می‌کند. داده‌های موجود حفظ می‌شوند تا بعداً دوباره فعال شوند.",
+    "disable": "غیرفعال کردن",
+    "searchPlaceholder": "جستجوی ویژگی‌ها...",
+    "settingsToggle": "تنظیمات",
+    "noSearchResults": "ویژگی‌ای مطابق «{query}» پیدا نشد",
+    "itemCount": "{count} ویژگی‌ها",
+    "filters": {
+      "all": "همه",
+      "active": "فعال",
+      "inactive": "غیرفعال"
+    },
+    "columns": {
+      "feature": "ویژگی",
+      "description": "توضیح",
+      "status": "وضعیت"
+    },
+    "summary": {
+      "total": "ویژگی‌های در دسترس",
+      "active": "ویژگی‌های فعال"
+    },
+    "system": {
+      "title": "ویژگی‌های سیستمی",
+      "description": "قابلیت‌های داخلی برای هر پروژه فقط فعال یا غیرفعال می‌شوند."
+    },
+    "modules": {
+      "title": "ماژول‌ها",
+      "description": "ماژول‌های استقرار‌یافته برای هر پروژه قابل فعال‌سازی هستند.",
+      "empty": "ماژولی برای این پروژه در دسترس نیست.",
+      "import": "وارد کردن",
+      "export": "خروجی",
+      "open": "باز کردن",
+      "install": "نصب",
+      "reactivate": "فعال‌سازی دوباره",
+      "reinstallTooltip": "نصب دوباره این ماژول و به‌روزرسانی فایل‌های آن",
+      "reinstall": "نصب دوباره",
+      "uninstallTooltip": "غیرفعال‌سازی این ماژول برای پروژه",
+      "uninstall": "غیرفعال‌سازی",
+      "delete": "حذف کامل",
+      "add": "اضافه‌کردن ماژول",
+      "deleteConfirmTitle": "ماژول «{name}» حذف شود؟",
+      "deleteConfirmDescription": "این کار ماژول را برای همیشه از دیسک حذف می‌کند و داده‌های آن را از پروژه‌های نصب‌شده پاک می‌کند. این عملیات قابل بازگشت نیست.",
+      "searchPlaceholder": "جستجوی ماژول‌ها...",
+      "noSearchResults": "ماژولی مطابق «{query}» پیدا نشد",
+      "imported": "ماژول وارد شد",
+      "exported": "خروجی ماژول آماده شد",
+      "importFailed": "وارد کردن ماژول ناموفق بود",
+      "exportFailed": "خروجی گرفتن از ماژول ناموفق بود",
+      "installed": "ماژول نصب شد",
+      "uninstalled": "ماژول غیرفعال شد و داده‌های آن حفظ شدند",
+      "installFailed": "نصب ماژول ناموفق بود",
+      "uninstallFailed": "غیرفعال‌سازی ماژول ناموفق بود",
+      "deleted": "ماژول از همه پروژه‌ها حذف شد",
+      "deleteFailed": "حذف کامل ماژول ناموفق بود",
+      "uninstallConfirmTitle": "{name} غیرفعال شود؟",
+      "uninstallConfirmDescription": "غیرفعال‌کردن این ماژول آن را برای این پروژه متوقف می‌کند. داده‌های آن حفظ می‌شوند و در صورت فعال‌سازی دوباره قابل بازیابی هستند.",
+      "deactivate": "غیرفعال کردن",
+      "importConflictTitle": "ماژول قبلاً وجود دارد",
+      "importConflictDescription": "ماژول {name} قبلاً وجود دارد (نسخه کنونی: {existingVersion}). آیا می‌خواهید آن را با نسخه {newVersion} جایگزین کنید؟",
+      "importOverwrite": "جایگزینی",
+      "importErrors": {
+        "invalidZip": "فایل بارگذاری‌شده یک ZIP معتبر ماژول نیست.",
+        "empty": "آرشیو ماژول خالی است.",
+        "tooManyFiles": "آرشیو ماژول بیش از حد فایل دارد.",
+        "invalidPath": "آرشیو ماژول مسیر فایل نامعتبر دارد.",
+        "tooLarge": "آرشیو ماژول بیش از حد بزرگ است.",
+        "missingManifest": "آرشیو ماژول فایل module.json ندارد.",
+        "invalidManifest": "مانیفست ماژول نامعتبر است.",
+        "moduleNotAvailable": "ماژول در دسترس نیست.",
+        "moduleServerConfigUnavailable": "سورس ماژول موجود است، اما پیکربندی سرور آن هنوز آماده نیست. چند لحظه بعد دوباره تلاش کنید.",
+        "projectDatabaseNotConfigured": "پایگاه داده پروژه پیکربندی نشده است."
+      },
+      "status": {
+        "installed": "نصب‌شده",
+        "inactive": "غیرفعال",
+        "available": "در دسترس",
+        "outdated": "به‌روزرسانی موجود است"
+      },
+      "filters": {
+        "all": "همه",
+        "active": "فعال",
+        "inactive": "غیرفعال",
+        "available": "در دسترس"
+      },
+      "itemCount": "{count} ماژول",
+      "columns": {
+        "module": "ماژول",
+        "description": "توضیح",
+        "status": "وضعیت"
+      },
+      "emptyFilter": "هیچ ماژولی با فیلترهای فعلی پیدا نشد.",
+      "version": "نسخه {version}",
+      "missingDependencies": "نیاز دارد به: {deps}",
+      "private": "خصوصی",
+      "update": "به‌روزرسانی",
+      "updateTooltip": "آخرین نسخه این ماژول را نصب کنید",
+      "cascadeWarning": "ماژول‌های فعال زیر نیز به این ماژول وابسته‌اند و ممکن است خراب شوند:",
+      "installDepsTitle": "نصب ماژول‌های مورد نیاز",
+      "installDepsDescription": "{module} نیاز به ماژول‌های زیر دارد:",
+      "installDepsInstallable": "قرار است نصب شود:",
+      "installDepsUnavailable": "یافت نشد — به‌صورت جداگانه نصب کنید:",
+      "installWithDeps": "نصب همه"
+    },
+    "scopes": {
+      "core": "هسته",
+      "frontend": "فرانت‌اند"
+    },
+    "deliveryModes": {
+      "module": "ماژول",
+      "plugin": "پلاگین"
+    },
+    "items": {
+      "mediaManagement": {
+        "title": "مدیریت رسانه",
+        "description": "قابلیت رسانه پروژه را برای ذخیره، سازمان‌دهی و استفاده دوباره از فایل‌های آپلودشده اضافه می‌کند.",
+        "toggle": "تغییر وضعیت مدیریت رسانه"
+      },
+      "statistics": {
+        "title": "آمار",
+        "description": "ردیابی بازدیدکننده و آنالیتیکس را برای سایت عمومی پروژه فعال می‌کند.",
+        "toggle": "تغییر وضعیت آمار"
+      },
+      "aiAssistant": {
+        "title": "دستیار هوش مصنوعی",
+        "description": "مدل‌ها، ارائه‌دهنده‌ها و جریان‌های کاری پرامپتِ دستیار را برای پروژه تنظیم می‌کند.",
+        "toggle": "تغییر وضعیت دستیار هوش مصنوعی"
+      },
+      "pageBuilder": {
+        "title": "سازنده صفحات",
+        "description": "سازنده صفحات بصری برای ایجاد و ویرایش طرح‌بندی محتوا بدون نیاز به کد.",
+        "toggle": "تغییر وضعیت سازنده صفحات"
+      }
+    },
+    "settings": {
+      "mediaManagement": {
+        "maxFileSizeMB": {
+          "label": "حداکثر حجم فایل",
+          "description": "بزرگ‌ترین حجم مجاز برای هر فایل رسانه‌ای هنگام آپلود.",
+          "unit": "مگابایت"
+        },
+        "maxHourlyUploadMB": {
+          "label": "حداکثر آپلود ساعتی",
+          "description": "حداکثر حجم آپلود رسانه مجاز برای هر کاربر در هر ساعت.",
+          "unit": "مگابایت"
+        },
+        "maxTotalStorageGB": {
+          "label": "حداکثر فضای ذخیره‌سازی",
+          "description": "حداکثر ظرفیت کل فضای ذخیره‌سازی برای کتابخانه رسانه این پروژه.",
+          "unit": "گیگابایت"
+        },
+        "maxStoragePerUserMB": {
+          "label": "حداکثر فضای هر کاربر",
+          "description": "حداکثر ظرفیت ذخیره‌سازی رسانه اختصاص‌یافته به هر کاربر.",
+          "unit": "مگابایت"
+        }
+      },
+      "statistics": {
+        "sessionTimeoutSeconds": {
+          "label": "پایان جلسه",
+          "description": "مدت زمانی که پس از آن یک جلسه بازدیدکننده غیرفعال به عنوان منقضی در نظر گرفته می‌شود.",
+          "unit": "دقیقه"
+        },
+        "liveThresholdSeconds": {
+          "label": "آستانه‌ی زنده",
+          "description": "بازه زمانی برای در نظر گرفتن یک جلسه بازدیدکننده به عنوان فعال در حال حاضر.",
+          "unit": "دقیقه"
+        }
+      }
+    }
+  }
+}

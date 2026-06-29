@@ -1,0 +1,56 @@
+{
+  "siteName": "Infologist",
+  "language": "Sprache",
+  "languageNames": {
+    "en": "Englisch",
+    "de": "Deutsch",
+    "fa": "Persisch"
+  },
+  "menu": {
+    "open": "Menü öffnen",
+    "close": "Menü schließen"
+  },
+  "sidebar": {
+    "collapse": "Seitenleiste einklappen",
+    "expand": "Seitenleiste ausklappen"
+  },
+  "theme": {
+    "toggle": "Theme wechseln"
+  },
+  "table": {
+    "total": "{count} insgesamt"
+  },
+  "pagination": {
+    "previous": "Vorherige Seite",
+    "next": "Nächste Seite"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "goBack": "Zurück",
+    "backHome": "Zur Startseite"
+  },
+  "error": {
+    "title": "Etwas ist schiefgelaufen",
+    "description": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "retry": "Erneut versuchen",
+    "backToDashboard": "Zurück zum Dashboard"
+  },
+  "actions": {
+    "settings": "Einstellungen"
+  },
+  "translate": {
+    "suggest": "In {locales} übersetzen?",
+    "apply": "Übersetzen",
+    "dismiss": "Nicht jetzt",
+    "loading": "Wird übersetzt…",
+    "success": "Übersetzungen übernommen",
+    "error": "Übersetzung fehlgeschlagen"
+  },
+  "iconPicker": {
+    "title": "Symbol auswählen",
+    "searchPlaceholder": "Symbole suchen...",
+    "noResults": "Keine Symbole gefunden",
+    "clear": "Löschen"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "title": "مدیریت کاربران",
+  "description": "مدیریت کاربران و نقش‌های آنها",
+  "totalUsers": "{count} کاربر",
+  "columns": {
+    "user": "کاربر",
+    "email": "ایمیل",
+    "role": "نقش",
+    "status": "وضعیت",
+    "actions": "عملیات"
+  },
+  "roles": {
+    "super_admin": "مدیر ارشد",
+    "admin": "مدیر",
+    "editor": "ویرایشگر",
+    "author": "نویسنده",
+    "contributor": "مشارکت‌کننده",
+    "user": "کاربر"
+  },
+  "actions": {
+    "edit": "ویرایش",
+    "changeRole": "تغییر نقش",
+    "delete": "حذف",
+    "none": "عملیاتی در دسترس نیست",
+    "deleteConfirm": "این کاربر حذف شود؟",
+    "deleteConfirmDescription": "این عمل قابل برگشت نیست.",
+    "cancel": "انصراف",
+    "confirm": "حذف"
+  },
+  "editTitle": "ویرایش {name}",
+  "editDescription": "اطلاعات کاربر انتخاب‌شده را به‌روزرسانی کنید.",
+  "editFields": "اطلاعات کاربر",
+  "editFieldsDescription": "اطلاعات پروفایل و سطح دسترسی را مدیریت کنید.",
+  "name": "نام",
+  "email": "ایمیل",
+  "role": "نقش",
+  "save": "ذخیره تغییرات",
+  "previewTitle": "پیش‌نمایش حساب",
+  "previewDescription": "این اطلاعات در داشبورد نمایش داده می‌شود.",
+  "statusLabel": "وضعیت ایمیل",
+  "googleLabel": "منبع حساب",
+  "googleManaged": "مدیریت‌شده توسط گوگل",
+  "manualManaged": "دستی",
+  "googleManagedField": "این مقدار از گوگل مدیریت می‌شود و اینجا قابل تغییر نیست.",
+  "saved": "کاربر ذخیره شد",
+  "error": "خطایی رخ داد",
+  "status": {
+    "verified": "تأیید شده",
+    "unverified": "تأیید نشده"
+  },
+  "empty": "کاربری یافت نشد",
+  "filters": {
+    "searchPlaceholder": "جستجو بر اساس نام یا ایمیل…",
+    "reset": "بازنشانی"
+  },
+  "deleteSuccess": "کاربر حذف شد",
+  "roleSuccess": "نقش به‌روزرسانی شد"
+}

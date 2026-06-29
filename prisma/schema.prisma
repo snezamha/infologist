@@ -1,0 +1,178 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
+}
+
+datasource db {
+  provider   = "postgresql"
+  extensions = [pg_trgm]
+}
+
+enum Role {
+  super_admin
+  admin
+  user
+}
+
+enum ProjectStatus {
+  draft
+  active
+  suspended
+  deleting
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime? @map("email_verified")
+  lastLoginAt   DateTime? @map("last_login_at")
+  image         String?
+  role          Role      @default(user)
+  accounts      Account[]
+  sessions      Session[]
+  ownedProjects Project[] @relation("ProjectOwner")
+
+  @@index([name(ops: raw("gin_trgm_ops"))], type: Gin, map: "users_name_trgm_idx")
+  @@index([email(ops: raw("gin_trgm_ops"))], type: Gin, map: "users_email_trgm_idx")
+  @@map("users")
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String  @map("user_id")
+  type              String
+  provider          String
+  providerAccountId String  @map("provider_account_id")
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+  @@map("accounts")
+}
+
+model Session {
+  id           String    @id @default(cuid())
+  sessionToken String    @unique @map("session_token")
+  userId       String    @map("user_id")
+  expires      DateTime
+  userAgent    String?   @map("user_agent") @db.Text
+  ipAddress    String?   @map("ip_address")
+  lastSeenAt   DateTime  @default(now()) @map("last_seen_at")
+  revokedAt    DateTime? @map("revoked_at")
+  createdAt    DateTime  @default(now()) @map("created_at")
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expires])
+  @@index([revokedAt])
+  @@map("sessions")
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@unique([identifier, token])
+  @@map("verification_tokens")
+}
+
+model AppearanceSettings {
+  id              String   @id @default("singleton")
+  themeSettings   Json     @default("{}") @map("theme_settings")
+  loadingSettings Json     @default("{}") @map("loading_settings")
+  updatedAt       DateTime @updatedAt @map("updated_at")
+
+  @@map("appearance_settings")
+}
+
+model Project {
+  id                     String           @id @default(cuid())
+  ownerId                String?          @map("owner_id")
+  publicId               String           @unique @map("public_id")
+  name                   String
+  status                 ProjectStatus    @default(draft)
+  statusMessage          String?          @map("status_message") @db.Text
+  config                 Json             @default("{}") @map("config")
+  customDomain           String?          @unique @map("custom_domain")
+  customDomainVerifiedAt DateTime?        @map("custom_domain_verified_at")
+  provisionedAt          DateTime?        @map("provisioned_at")
+  createdAt              DateTime         @default(now()) @map("created_at")
+  updatedAt              DateTime         @updatedAt @map("updated_at")
+  owner                  User?            @relation("ProjectOwner", fields: [ownerId], references: [id], onDelete: SetNull)
+  features               ProjectFeature[]
+  modules                ProjectModule[]
+
+  @@index([ownerId])
+  @@index([status])
+  @@index([customDomain])
+  @@map("projects")
+}
+
+model ProjectFeature {
+  id        String   @id @default(cuid())
+  projectId String   @map("project_id")
+  key       String
+  enabled   Boolean  @default(false)
+  settings  Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, key])
+  @@index([projectId])
+  @@index([key])
+  @@map("project_features")
+}
+
+model ProjectModule {
+  id        String   @id @default(cuid())
+  projectId String   @map("project_id")
+  key       String
+  enabled   Boolean  @default(true)
+  version   String?
+  settings  Json     @default("{}")
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+  project   Project  @relation(fields: [projectId], references: [id], onDelete: Cascade)
+
+  @@unique([projectId, key])
+  @@index([projectId])
+  @@index([key])
+  @@map("project_modules")
+}
+
+model MediaAsset {
+  id           String   @id
+  shortId      String   @unique @map("short_id")
+  filename     String
+  mimeType     String   @map("mime_type")
+  size         Int
+  path         String
+  publicUrl    String   @map("public_url")
+  uploadedById String?  @map("uploaded_by_id")
+  alt          String   @default("")
+  caption      String   @default("")
+  description  String   @default("")
+  credit       String   @default("")
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@index([uploadedById])
+  @@map("media_assets")
+}
+
+model UserUsage {
+  userId           String   @id @map("user_id")
+  storageUsedBytes Int      @default(0) @map("storage_used_bytes")
+  updatedAt        DateTime @updatedAt @map("updated_at")
+
+  @@map("user_usage")
+}

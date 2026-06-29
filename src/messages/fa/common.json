@@ -1,0 +1,56 @@
+{
+  "siteName": "Infologist",
+  "language": "زبان",
+  "languageNames": {
+    "en": "انگلیسی",
+    "de": "آلمانی",
+    "fa": "فارسی"
+  },
+  "menu": {
+    "open": "باز کردن منو",
+    "close": "بستن منو"
+  },
+  "sidebar": {
+    "collapse": "جمع کردن نوار کناری",
+    "expand": "باز کردن نوار کناری"
+  },
+  "theme": {
+    "toggle": "تغییر پوسته"
+  },
+  "table": {
+    "total": "مجموع: {count}"
+  },
+  "pagination": {
+    "previous": "صفحه قبلی",
+    "next": "صفحه بعدی"
+  },
+  "notFound": {
+    "title": "صفحه پیدا نشد",
+    "description": "صفحه‌ای که دنبال آن هستید وجود ندارد یا جابه‌جا شده است.",
+    "goBack": "بازگشت",
+    "backHome": "بازگشت به خانه"
+  },
+  "error": {
+    "title": "خطایی رخ داد",
+    "description": "خطای غیرمنتظره‌ای رخ داد. لطفاً دوباره تلاش کنید.",
+    "retry": "تلاش دوباره",
+    "backToDashboard": "بازگشت به داشبورد"
+  },
+  "actions": {
+    "settings": "تنظیمات"
+  },
+  "translate": {
+    "suggest": "این متن به {locales} ترجمه شود؟",
+    "apply": "ترجمه",
+    "dismiss": "الان نه",
+    "loading": "در حال ترجمه…",
+    "success": "ترجمه‌ها اعمال شد",
+    "error": "ترجمه انجام نشد"
+  },
+  "iconPicker": {
+    "title": "انتخاب آیکون",
+    "searchPlaceholder": "جستجوی آیکون...",
+    "noResults": "آیکونی پیدا نشد",
+    "clear": "پاک کردن"
+  }
+}
